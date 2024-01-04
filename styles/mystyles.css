@@ -299,7 +299,7 @@ th:not([align]) {
 
 html {
   background-color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -9535,7 +9535,7 @@ ul.my-list > li:before {
   display: inline-block;
   width: 15px;
   height: 1px;
-  background: #212121;
+  background: #ffffff;
   vertical-align: top;
   margin-top: 12px;
   margin-right: 1em;
