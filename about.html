@@ -13,7 +13,7 @@
 
     <!---nav bar--------------------------------------------------->
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-        <div class="container is-fluid">
+        <div class="container is-max-fullhd">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <img src="images/nb-logo-white.png">&nbsp;nada bonaso
@@ -47,33 +47,35 @@
 
 
     <!---hero-------------------------->
-    <section class="hero is-white is-small">
-        <div class="container is-fluid">
-            <div class="hero-body">
-                <div class="columns is-desktop">
-                    <div class="column">
-                        <h1 class="title xl-heading mt-5">
-                            About.
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+
+    <section class="section is-hidden-mobile is-max-fullhd pb-0">
+          <div class="container">
+            <h1 class="title xl-heading">
+              About.
+            </h1>
+            <!-- <h2 class="title is-3">I specialize in solving complex problems with lightweight and strategic
+                design processes.</h2> -->
+          </div>
+
+      </section>
+
+      <section class="section is-hidden-tablet is-max-fullhd pb-0">
+        <div class="container">
+          <h1 class="title is-1">
+            About.
+          </h1>
+          <!-- <h2 class="title is-3">I specialize in solving complex problems with lightweight and strategic
+            design processes.</h2> -->
+        </div>
     </section>
 
 
     <!--main content----------------->
     <section class="section">
-        <!-- <div class="container is-max-widescreen">
-            <div class="content">
-                <h1 class="title is-2">I specialize in solving complex problems with lightweight and strategic
-                    design processes.</h1>
-            </div>
-        </div> -->
-        <div class="container is-fluid">
-            <div class="columns">
-                <div class="column is-6 is-align-items-center-mobile">
+        <div class="container is-max-fullhd">
+            <div class="columns is-vcentered">
+                <div class="column is-3 is-align-items-center-mobile">
                     <figure class="image">
                         <img class="is-rounded profile-pic" src="images/portrait-nb-sml.png">
                     </figure>
@@ -87,7 +89,7 @@
 
                 <div class="column">
                     <div class="content mt-5">
-                        <h3 class="is-size-2 is-size-3-mobile block">I specialize in solving problems with lightweight and
+                        <h3 class="is-size-3 is-size-3-mobile block">I specialize in solving problems with lightweight and
                             strategic design processes.</h3>
                         <p class="block">I have a background in fine arts, which has helped me develop an eye for visual
                             balance and strong critical
@@ -96,11 +98,6 @@
                         <p class="block">I love to tackle tough problems, turn ideas into prototypes, and make them
                             functional with code. I'm dedicated to simplicity in my design and ensuring users have a
                             great experience.</p>
-                        <div class="buttons mt-6">
-                            <button class="button is-primary">View UX certifications</button>
-                            <!-- <button class="button is-black">Coding Bootcamp</button> -->
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -108,12 +105,13 @@
     </section>
 
     <!--experience and skills---------------------------------->
-    <section class="section is-small mt-4 mb-0">
-        <div class="container is-fluid">
+    <section class="section is-small mb-6">
+        <div class="container is-max-fullhd mb-6">
 
             <!--columns---------------------------------->
             <div class="columns">
-                <div class="column is-6 pr-6">
+                <div class="column is-3"></div>
+                <div class="column pr-6">
 
                     <!--education ---------------------------------->
                     <div class="container mb-6">
@@ -139,6 +137,12 @@
                             <p class="has-text-weight-bold">HyperionDev</p>
                             <p>Software Engineering Bootcamp</p>
                         </div>
+
+                        <div class="buttons mt-6">
+                            <button class="button is-black">UX certifications</button>
+                            <!-- <button class="button is-black">Coding Bootcamp</button> -->
+
+                        </div>
                     </div>
 
                     <!--experience ---------------------------------->
@@ -156,7 +160,7 @@
 
 
                 </div>
-                <div class="column is-5 ">
+                <div class="column ">
                     <!--skills---------------------------------->
                     <div class="container">
                         <div class="my-section-headings">
@@ -179,7 +183,7 @@
                         </div> -->
                         <div class="content mt-6">
                             <h4 class="subtitle">Design & Coding</h4>
-                            <div class="tags is-lowercase">
+                            <div class="tags is-lowercase are-medium">
                                 <!-- <span class="tag has-text-primary has-background-primary-light is-rounded">Product
                                     Design</span> -->
                                 <span class="tag has-text-primary has-background-primary-light is-rounded">UX/UI</span>
@@ -228,7 +232,7 @@
                         </div> -->
                         <div class="content mt-4">
                             <h4 class="subtitle">Tools</h4>
-                            <div class="tags is-lowercase ">
+                            <div class="tags is-lowercase are-medium">
                                 <span class="tag has-text-primary has-background-primary-light is-rounded">Adobe
                                     Creative Suite</span>
                                 <span class="tag has-text-primary has-background-primary-light is-rounded">XD</span>
@@ -248,8 +252,8 @@
     </section>
 
     <!--contact section-------------------------------------------->
-    <section class="section my-6">
-        <div id="contact" class="container is-fluid">
+    <!-- <section class="section my-6">
+        <div id="contact" class="container is-max-fullhd">
             <div class="my-section-headings">
                 <h5 class="hr-lines  has-text-weight-bold">let's collaborate</h5>
             </div>
@@ -274,11 +278,51 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--footer--------------------------------------------------->
-    <footer class="footer is-small pb-6">
-        <div class="container is-fluid">
+
+    <footer class="footer is-small">
+        <div id="contact" class="jump-to-section"></div>
+
+        <div class="container mb-6">
+            <h2 class="title is-2 is-size-4-mobile">
+                <a href="mailto:design@nadabonaso.com">design@nadabonaso.com</a>
+            </h2>
+            <div class=" buttons mt-4">
+                <a class="pr-4" href="https://www.linkedin.com/in/nadabonaso/" target="_blank"><span class=" icon-text">
+                        <span class=" is-underlined">LinkedIn</span>
+                    </span>
+                </a>
+                <a class="pr-4" href="https://github.com/nadabonaso" target="_blank"><span class=" icon-text">
+                        <span class=" is-underlined">GitHub</span>
+                    </span>
+                </a>
+                <a class="pr-4" href="./Nada-Bonaso-Resume.pdf" target="_blank"><span class=" icon-text">
+                        <span class=" is-underlined">Resume</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="columns is-gapless level">
+                <div class="column">
+                    <div class="has-text-centered-mobile">
+                        <p>Copyright © 2024 Nada Bonaso.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-links has-text-right has-text-centered-mobile">
+                        <a class="back-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <footer class="footer is-small pb-6">
+        <div class="container is-max-fullhd">
             <div class="columns">
                 <div class="column">
                     <div class="has-text-centered-mobile">Copyright © Nada Bonaso.
@@ -287,10 +331,6 @@
                 <div class="column">
                     <div class="footer-links has-text-right has-text-centered-mobile">
                         <ul>
-                            <!-- <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html#work">Work</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="index.html#contact">Contact</a></li> -->
                             <li><a href="#top"><i class="fa-solid fa-arrow-up"></i> Top</a></li>
                         </ul>
                     </div>
@@ -298,7 +338,7 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
