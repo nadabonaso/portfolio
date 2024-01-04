@@ -1,2 +1,2 @@
 # ux-portfolio
-This is a website I created for my UX design porfolio.
+Website I created for my UX design porfolio utilizing the Bulma CSS Framework.

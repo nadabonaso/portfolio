@@ -4,86 +4,103 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NB Contact</title>
+    <title>Nada Bonaso About</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script src="js/myscripts.js"></script>
+    <link rel="stylesheet" href="styles/mystyles.css">
 </head>
 
 <body>
 
-
-    <!---hero-------------------------->
-    <section class="hero is-black is-small">
-        <div class="hero-head">
-
-            <!---nav bar----------------------------------->
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
-                        <img src="images/nb-logo-black.png">
+    <!---nav bar--------------------------------------------------->
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="images/nb-logo-white.png">&nbsp;nada bonaso
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html" target="_self">
+                        Home
                     </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                        data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
+                    <a class="navbar-item" href="index.html#work" target="_self">
+                        Work
+                    </a>
+                    <a class="navbar-item is-active" href="about.html" target="_self">
+                        About
+                    </a>
+                    <a class="navbar-item" href="#contact" target="_self">
+                        Contact
                     </a>
                 </div>
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="./index.html" target="_self">
-                            Portfolio
-                        </a>
-                        <a class="navbar-item is-active" href="./about.html" target="_self">
-                            About
-                        </a>
-                        <a class="navbar-item" href="./Nada Bonaso - UX Engineer - CV.pdf" target="_blank">
-                            Resume
-                        </a>
-                        <a class="navbar-item" href="./contact.html" target="_self">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-        <div class="hero-body">
-            <div class="container is-max-widescreen">
-                <p class="title">
-                    About
-                </p>
             </div>
         </div>
+    </nav>
+
+
+    <!---hero-------------------------->
+    <section class="hero is-white is-small">
+        <div class="container is-fluid">
+            <div class="hero-body">
+                <div class="columns is-desktop">
+                    <div class="column">
+                        <h1 class="title xl-heading mt-5">
+                            About.
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
 
 
     <!--main content----------------->
-    <section class="section is-medium">
-        <div class="container is-max-widescreen">
+    <section class="section">
+        <!-- <div class="container is-max-widescreen">
             <div class="content">
-                <h1 class="title is-2">I specialise in analysing problems and
-                    improving digital products with efficient
-                    solutions and strong front-end skills.</h1>
+                <h1 class="title is-2">I specialize in solving complex problems with lightweight and strategic
+                    design processes.</h1>
             </div>
-        </div>
-        <div class="container is-max-widescreen mt-6">
-            <div class="columns is-variable is-8">
-                <div class="column is-3 p-5">
+        </div> -->
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column is-6 is-align-items-center-mobile">
                     <figure class="image">
-                        <img class="is-rounded" src="images/portrait-nb-sml.png">
+                        <img class="is-rounded profile-pic" src="images/portrait-nb-sml.png">
                     </figure>
+                    <!-- <div class="mt-6 ml-0">
+                        <a class="button is-black" href="" target="_blank">UX Certifications
+                        </a>
+                        <a class="button is-black" href="" target="_blank">Coding Bootcamp
+                        </a>
+                    </div> -->
                 </div>
+
                 <div class="column">
-                    <div class="content is-medium mt-5 pl-5">
-                        <p class="block">With a foundation in fine arts, I have cultivated a knack for critical thinking
-                            and a sharp eye for visual aesthetics and balance. My expertise has evolved into a versatile
-                            set of skills spanning digital design, user experience, and front-end development.</p>
-                        <p class="block">My passion lies in dissecting complex problems, morphing abstract concepts into
-                            tangible prototypes, and ultimately bringing them to life through code. I'm unwavering in my
-                            pursuit of design simplicity and commitment to delivering a stellar user experience.</p>
+                    <div class="content mt-5">
+                        <h3 class="is-size-3 block">I specialize in solving problems with lightweight and
+                            strategic design processes.</h3>
+                        <p class="block">I have a background in fine arts, which has helped me develop an eye for visual
+                            balance and strong critical
+                            thinking skills. My expertise includes user experience,
+                            visual design and front-end development.</p>
+                        <p class="block">I love to tackle tough problems, turn ideas into prototypes, and make them
+                            functional with code. I'm dedicated to simplicity in my design and ensuring users have a
+                            great experience.</p>
+                        <div class="buttons mt-6">
+                            <button class="button is-black">UX Certifications</button>
+                            <button class="button is-black">Coding Bootcamp</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,160 +108,201 @@
     </section>
 
     <!--experience and skills---------------------------------->
-    <section class="section">
-        <div class=" container is-max-widescreen">
-            <div class="columns is-variable is-8">
-                <div class="column is-6">
+    <section class="section is-small mt-4 mb-0">
+        <div class="container is-fluid">
+
+            <!--columns---------------------------------->
+            <div class="columns">
+                <div class="column is-6 pr-6">
 
                     <!--education ---------------------------------->
-                    <div class="content">
-                        <h2 class="title is-3">Education</h2>
-
-                        <div class="content mt-6">
-                            <h4 class="title is-5">Wimbledon College of Art (UAL), London </h4>
-                            <p class="subtitle is-6 has-text-grey">BA (Hons) Fine Art: Painting, Upper Second-Class
-                                Honours</p>
+                    <div class="container mb-6">
+                        <div class="my-section-headings">
+                            <h5 class="hr-lines has-text-weight-bold">Education</h5>
+                        </div>
+                        <div class="block mt-6">
+                            <p class="has-text-weight-bold">Wimbledon College of Art (UAL), London</p>
+                            <p>BA (Hons) Fine Art: Painting</p>
                         </div>
 
-                        <div class="content">
-                            <h4 class="title is-5">Interaction Design Foundation</h4>
-                            <p class="subtitle is-6 has-text-grey">UX Design Online Certifications</p>
+                        <div class="block">
+                            <p class="has-text-weight-bold">WM College, London</p>
+                            <p>Foundation Diploma in Art & Design</p>
                         </div>
 
-                        <div class="content">
-                            <p class="title is-5">HyperionDev</p>
-                            <p class="subtitle is-6 has-text-grey">Software Engineering Bootcamp</p>
+                        <div class="block">
+                            <p class="has-text-weight-bold">Interaction Design Foundation</p>
+                            <p>UX Design Certifications</p>
                         </div>
 
-                        <div class="content">
-                            <h4 class="title is-5">WM College, London</h4>
-                            <p class="subtitle is-6 has-text-grey">Foundation Diploma in Art & Design</p>
+                        <div class="block">
+                            <p class="has-text-weight-bold">HyperionDev</p>
+                            <p>Software Engineering Bootcamp</p>
                         </div>
-                        <div class="content">
-                            <h4 class="title is-5">Durban Language Centre</h4>
-                            <p class="subtitle is-6 has-text-grey">Cambridge CELTA</p>
-                        </div>
-
-                        <div class="content">
-                            <h4 class="title is-5">Mediatek</h4>
-                            <p class="subtitle is-6 has-text-grey">Extended Internet Publishing Diploma</p>
-                        </div>
-
                     </div>
 
                     <!--experience ---------------------------------->
-                    <div class="content mt-6">
-                        <h2 class="title is-3">Experience</h2>
+                    <!-- <div class="container">
+                        <div class="my-section-headings pt-6">
+                            <h5 class="hr-lines has-text-weight-bold">Experience</h5>
+                        </div>
+                        <p>Freelance UX Engineer</p>
+                        <p>Jembi Health Systems NPO</p>
+                        <p>REDi</p>
+                        <p>Mofuyamamofuko Co.</p>
+                        <p>Eleven Studio</p>
+                        <p>IS Internet Services</p>
+                    </div> -->
 
+
+                </div>
+                <div class="column is-5 ">
+                    <!--skills---------------------------------->
+                    <div class="container">
+                        <div class="my-section-headings">
+                            <h5 class="hr-lines has-text-weight-bold">Skills</h5>
+                        </div>
+                        <!-- <div class="content mt-6">
+                            <h4 class="subtitle">General</h4>
+                            <div class="tags is-lowercase">
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Creative</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Problem-solving</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Detail-oriented</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Technical</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Conceptual</span>
+                            </div>
+                        </div> -->
                         <div class="content mt-6">
-                            <h4 class="title is-5">Freelance</h4>
-                            <p class="subtitle is-6 has-text-grey">UX UI Designer & Front-end Developer
-                                <span class="content is-small"> • Remote • 2019 - Present</span>
-                            </p>
+                            <h4 class="subtitle">Design & Coding</h4>
+                            <div class="tags is-lowercase">
+                                <!-- <span class="tag has-text-primary has-background-primary-light is-rounded">Product
+                                    Design</span> -->
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">UX/UI</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Discovery &
+                                    Planning</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Problem
+                                    Statements</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">User
+                                    Research</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">User
+                                    Stories</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Competitor
+                                    Analysis</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Sketching</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Information
+                                    Architecture</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Interaction
+                                    Design</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Wireframing</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Prototyping</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">HTML &
+                                    CSS</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Bootstrap</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Bulma</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Agile/Scrum</span>
+                            </div>
                         </div>
-                        <div class="content">
-                            <h4 class="title is-5">Jembi Health Systems NPO</h4>
-                            <p class="subtitle is-6 has-text-grey">UX Engineer <span class="content is-small"> • Cape
-                                    Town • 2019</span></p>
-                        </div>
-                        <div class="content">
-                            <h4 class="title is-5">REDi</h4>
-                            <p class="subtitle is-6 has-text-grey">UX Engineer<span class="content is-small"> • Cape
-                                    Town • 2017 - 2019</span></p>
-                        </div>
-                        <div class="content">
-                            <h4 class="title is-5">Mofuyamamofuko Co.</h4>
-                            <p class="subtitle is-6 has-text-grey">UX Designer & Consultant
-                                <span class="content is-small"> • Tokyo • 2015 - 2017</span>
-                            </p>
-                        </div>
-                        <div class="content">
-                            <h4 class="title is-5">Eleven Studio</h4>
-                            <p class="subtitle is-6 has-text-grey">Creative Director & Co-owner
-                                <span class="content is-small"> • Durban • 2010 - 2015</span>
-                            </p>
+                        <!-- <div class="content mt-6">
+                            <h4 class="subtitle">Coding</h4>
+                            <div class="tags is-lowercase">
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">HTML</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">CSS/SCSS</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Bootstrap</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Java</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Python</span>
+                                <span
+                                    class="tag has-text-primary has-background-primary-light is-rounded">Agile/Scrum</span>
+                            </div>
+                        </div> -->
+                        <div class="content mt-4">
+                            <h4 class="subtitle">Tools</h4>
+                            <div class="tags is-lowercase ">
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Adobe
+                                    Creative Suite</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">XD</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Figma</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">JIRA</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Trello</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Slack</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">VSC</span>
+                                <span class="tag has-text-primary has-background-primary-light is-rounded">Git
+                                    &
+                                    GitHub</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+    </section>
 
+    <!--contact section-------------------------------------------->
+    <section class="section my-6">
+        <div id="contact" class="container is-fluid">
+            <div class="my-section-headings">
+                <h5 class="hr-lines  has-text-weight-bold">let's collaborate</h5>
+            </div>
+            <h3 class="title is-3">
+                <a href="mailto:design@nadabonaso.com">design@nadabonaso.com</a>
+            </h3>
+            <div class="content mt-4">
+                I am always up to collaborate on remote freelance contracts or part-time projects.
+            </div>
+            <div class=" buttons mt-4">
+                <a class="pr-4" href="https://www.linkedin.com/in/nadabonaso/" target="_blank"><span class=" icon-text">
+                        <span>LinkedIn</span>
+                    </span>
+                </a>
+                <a class="pr-4" href="https://github.com/nadabonaso" target="_blank"><span class=" icon-text">
+                        <span>GitHub</span>
+                    </span>
+                </a>
+                <a class="pr-4" href="./Nada-Bonaso-Resume.pdf" target="_blank"><span class=" icon-text">
+                        <span>Resume</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!--footer--------------------------------------------------->
+    <footer class="footer is-small pb-6">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <div class="has-text-centered-mobile">Copyright © Nada Bonaso.
+                    </div>
                 </div>
                 <div class="column">
-                    <!--skills---------------------------------->
-                    <div class="content is-medium">
-                        <h2>Skills</h2>
-                        <div class="content mt-6">
-                            <h4 class="subtitle">General</h4>
-                            <div class="tags are-medium">
-                                <span class="tag is-black">Analytical</span>
-                                <span class="tag is-black">Creative</span>
-                                <span class="tag is-black">Goal-oriented</span>
-                                <span class="tag is-black">Process-driven</span>
-                                <span class="tag is-black">Attention to detail</span>
-                            </div>
-                        </div>
-                        <div class="content mt-6">
-                            <h4 class="subtitle">Design</h4>
-                            <div class="tags are-medium">
-                                <span class="tag is-black">Discovery & Planning</span>
-                                <span class="tag is-black">Problem Statements</span>
-                                <span class="tag is-black">User Stories</span>
-                                <span class="tag is-black">Sketching</span>
-                                <span class="tag is-black">Wire-framing</span>
-                                <span class="tag is-black">Prototyping</span>
-                                <span class="tag is-black">Visual Design</span>
-                                <span class="tag is-black">Adobe Creative Cloud</span>
-                            </div>
-                        </div>
-                        <div class="content mt-6">
-                            <h4 class="subtitle">Engineering</h4>
-                            <div class="tags are-medium">
-                                <span class="tag is-black">Responsive UI Development</span>
-                                <span class="tag is-black">HTML & CSS</span>
-                                <span class="tag is-black">Bootstrap</span>
-                                <span class="tag is-black">Git, GitHub, Heroku</span>
-                                <span class="tag is-black">Agile, Waterfall, sprints</span>
-                                <span class="tag is-black">Cross-browser and device testing</span>
-                            </div>
-                        </div>
-                        <div class="content mt-6">
-                            <h4 class="subtitle">Project</h4>
-                            <div class="tags are-medium">
-                                <span class="tag is-black">JIRA, Trello, Asana</span>
-                                <span class="tag is-black">Adobe CC, Figma, Zeplin, Miro, InVision</span>
-                                <span class="tag is-black">Slack, Microsoft Teams</span>
-                            </div>
-                        </div>
+                    <div class="footer-links has-text-right has-text-centered-mobile">
+                        <ul>
+                            <!-- <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#work">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li> -->
+                            <li><a href="#top"><i class="fa-solid fa-arrow-up"></i> Top</a></li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
-    </section>
-
-    <!--contact email--------------------------------->
-    <section class="section is-medium">
-        <div id="contact" class="container is-max-widescreen">
-            <h5 class="block">&#8212; CONTACT</h5>
-            <h2 class="title is-2">
-                <a href="mailto:design@nadabonaso.com">design@nadabonaso.com</a>
-            </h2>
-            <div class="block">
-                I am always up to collaborate on remote freelance projects or part-time contracts. <a
-                    href="mailto:design@nadabonaso.com">Let's work together.</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!--footer------------------------------>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>NB</strong> by <a href="https://jgthms.com">Nada Bonaso</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
         </div>
     </footer>
-
 </body>
 
 </html>
+
+
+<script src="js/myscripts.js"></script>
+<script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
