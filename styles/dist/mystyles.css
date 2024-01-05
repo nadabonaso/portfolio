@@ -9589,7 +9589,7 @@ ul.my-list > li:before {
   display: inline-block;
   width: 15px;
   height: 1px;
-  background: #ffffff;
+  background: #212121;
   vertical-align: top;
   margin-top: 12px;
   margin-right: 1em;
