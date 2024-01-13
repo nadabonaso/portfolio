@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://use.typekit.net/dpg4exa.css");
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .pagination-previous,
@@ -12,7 +10,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
@@ -20,10 +18,10 @@
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.5em - 2px);
-  padding-left: calc(0.75em - 2px);
-  padding-right: calc(0.75em - 2px);
-  padding-top: calc(0.5em - 2px);
+  padding-bottom: calc(0.5em - 0.125rem);
+  padding-left: calc(0.75em - 0.125rem);
+  padding-right: calc(0.75em - 0.125rem);
+  padding-top: calc(0.5em - 0.125rem);
   position: relative;
   vertical-align: top;
 }
@@ -299,7 +297,7 @@ th:not([align]) {
 
 html {
   background-color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -457,14 +455,14 @@ a.box:active {
 .button {
   background-color: #ffffff;
   border-color: hsl(0, 0%, 86%);
-  border-width: 2px;
+  border-width: 0.125rem;
   color: hsl(0, 0%, 21%);
   cursor: pointer;
   justify-content: center;
-  padding-bottom: calc(0.5em - 2px);
+  padding-bottom: calc(0.5em - 0.125rem);
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: calc(0.5em - 2px);
+  padding-top: calc(0.5em - 0.125rem);
   text-align: center;
   white-space: nowrap;
 }
@@ -476,16 +474,16 @@ a.box:active {
   width: 1.5em;
 }
 .button .icon:first-child:not(:last-child) {
-  margin-left: calc(-0.5em - 2px);
+  margin-left: calc(-0.5em - 0.125rem);
   margin-right: 0.25em;
 }
 .button .icon:last-child:not(:first-child) {
   margin-left: 0.25em;
-  margin-right: calc(-0.5em - 2px);
+  margin-right: calc(-0.5em - 0.125rem);
 }
 .button .icon:first-child:last-child {
-  margin-left: calc(-0.5em - 2px);
-  margin-right: calc(-0.5em - 2px);
+  margin-left: calc(-0.5em - 0.125rem);
+  margin-right: calc(-0.5em - 0.125rem);
 }
 .button:hover, .button.is-hovered {
   border-color: hsl(0, 0%, 71%);
@@ -2841,8 +2839,8 @@ a.tag:hover {
 
 .input.is-rounded {
   border-radius: 9999px;
-  padding-left: calc(calc(0.75em - 2px) + 0.375em);
-  padding-right: calc(calc(0.75em - 2px) + 0.375em);
+  padding-left: calc(calc(0.75em - 0.125rem) + 0.375em);
+  padding-right: calc(calc(0.75em - 0.125rem) + 0.375em);
 }
 .input.is-static {
   background-color: transparent;
@@ -2856,7 +2854,7 @@ a.tag:hover {
   display: block;
   max-width: 100%;
   min-width: 100%;
-  padding: calc(0.75em - 2px);
+  padding: calc(0.75em - 0.125rem);
   resize: vertical;
 }
 .textarea:not([rows]) {
@@ -9168,7 +9166,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-family-secondary {
-  font-family: "gelica", sans-serif !important;
+  font-family: "Nunito", sans-serif !important;
 }
 
 .is-family-sans-serif {
@@ -10296,19 +10294,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hr-lines:before {
   content: "";
   display: inline-block;
-  width: 50px;
-  height: 2px;
+  width: 3.12rem;
+  height: 0.125rem;
   background: #212121;
   vertical-align: top;
-  margin-top: 12px;
-  margin-right: 15px;
+  margin-top: 0.625rem;
+  margin-right: 1rem;
 }
 
 .hr-line {
   content: "";
   display: inline-block;
   width: 100%;
-  height: 4px;
+  height: 0.25rem;
   background: whitesmoke;
   vertical-align: top;
   margin: 10rem 0;
@@ -10323,12 +10321,12 @@ ul.my-list {
 ul.my-list > li:before {
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 1px;
+  width: 13.12rem;
+  height: 0.125rem;
   background: #212121;
   vertical-align: top;
-  margin-top: 12px;
-  margin-right: 1em;
+  margin-top: 0.625rem;
+  margin-right: 1rem;
 }
 
 .navbar-item img {
@@ -10345,7 +10343,7 @@ ul.my-list > li:before {
 }
 
 .jump-to-section {
-  height: 20px;
+  height: 1.5rem;
   display: block;
 }
 
@@ -10389,6 +10387,6 @@ footer .back-top {
 }
 
 .profile-pic {
-  max-width: 300px;
+  max-width: 18.75rem;
   padding: 1rem;
 }/*# sourceMappingURL=mystyles.css.map */
