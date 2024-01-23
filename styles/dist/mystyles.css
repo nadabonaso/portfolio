@@ -10432,9 +10432,15 @@ footer .back-top {
 
 .xl-heading {
   font-size: 5rem;
-  line-height: 5rem;
+  line-height: 4.6rem;
 }
 
+@media (max-width: 1216px) {
+  .xl-heading {
+    font-size: 4rem;
+    line-height: 3.6rem;
+  }
+}
 .footer {
   background-color: whitesmoke;
 }
