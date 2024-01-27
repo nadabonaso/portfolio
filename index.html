@@ -80,8 +80,8 @@
 
     <!---hero---------------------------------------------------->
     <section class="hero is-white is-hidden-touch">
-        <div class="container is-max-fullhd my-6">
-            <div class="py-6">
+        <div class="container is-max-fullhd mt-6">
+            <div class="pt-6">
                 <div class="columns">
                     <div class="column is-7">
                         <h1 class="title is-spaced xl-heading">Designing beautiful, simple, and easy to
@@ -94,6 +94,7 @@
                     </div>
                 </div>
             </div>
+            <div class="hr-line"></div>
         </div>
     </section>
     <section class="hero is-white is-hidden-desktop">
@@ -114,14 +115,15 @@
                     </div>
                 </div>
             </div>
+            <div class="hr-line"></div>
         </div>
     </section>
 
     <!---columns for case studies--------------------------------->
-    <section class="section">
+    <section class="section mt-0 pt-0">
         <div id="work" class="jump-to-section"></div>
-        <div class="container is-max-fullhd">
-            <div class="columns is-desktop">
+        <div class="container my-0 py-0 is-max-fullhd">
+            <div class="columns py-0-desktop is-desktop">
                 <div class="column">
                     <div class="my-section-headings">
                         <h5 class="hr-lines has-text-weight-bold">Featured work</h5>
@@ -169,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cs block mb-6">
+                    <div class="cs block mb-0 pb-0">
                         <div class="">
                             <a href="case-study-03.html" target="_self">
                                 <figure class="image is-3by2">
@@ -190,6 +192,105 @@
                                     case study</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line"></div>
+        </div>
+    </section>
+
+    <!--testimonials-->
+    <section class="section mb-6">
+        <div class="container is-max-fullhd">
+            <div class="columns">
+                <div class="column">
+                    <div class="my-section-headings">
+                        <h5 class="hr-lines has-text-weight-bold">Testimonials</h5>
+                    </div>
+                </div>
+                <div class="column is-7-desktop mb-6 pb-6 pt-0 mt-0">
+                    <div class="columns py-0 my-0">
+                        <div id="testHolder" class="column pb-0 my-0">
+                            <div class="testimonial trans">
+                                <div class="pb-6">
+                                    <img src="images/SVG/quote-bold-black.svg" width="80px" alt="Quotation marks" />
+                                </div>
+                                <h5 class="is-size-5  is-size-6-mobile mb-3">
+                                    Nada is an incredibly diligent and effective front-end developer. She
+                                    mastered
+                                    the Bootstrap CSS framework quickly when working with us, and produced some
+                                    brilliant, responsive web pages. She also began learning Ruby on Rails, and
+                                    picked up the basics quickly. Would highly recommend as someone who's fun
+                                    and
+                                    easy to work with!
+                                </h5>
+                                <p class="block is-uppercase is-size-7">
+                                    Ravi K.
+                                </p>
+                            </div>
+                            <div class="testimonial trans">
+                                <div class="pb-6">
+                                    <img src="images/SVG/quote-bold-black.svg" width="80px" alt="Quotation marks" />
+                                </div>
+                                <h5 class="is-size-5  is-size-6-mobile mb-3">What sets Nada apart is not just her
+                                    technical prowess but her approach to design and problem-solving. Her meticulous
+                                    attention to every aspect of
+                                    the user journey, ensuring each click in the application was intuitive and
+                                    purposeful, reflects her deep commitment to excellence.
+                                </h5>
+                                <p class="block is-uppercase is-size-7">
+                                    G. Fysh
+                                </p>
+                            </div>
+                            <div class="testimonial trans">
+                                <div class="pb-6">
+                                    <img src="images/SVG/quote-bold-black.svg" width="80px" alt="Quotation marks" />
+                                </div>
+                                <h5 class="is-size-5  is-size-6-mobile mb-3">
+                                    I'm so lucky to have discovered Nada to work with for
+                                    my website design. She's always very professional, incredibly organised and
+                                    produces beautiful
+                                    work. I highly recommend working with her.
+                                </h5>
+                                <p class="block is-uppercase is-size-7">
+                                    Tara L.
+                                </p>
+                            </div>
+                            <div class="testimonial trans">
+                                <div class="pb-6">
+                                    <img src="images/SVG/quote-bold-black.svg" width="80px" alt="Quotation marks" />
+                                </div>
+                                <h5 class="is-size-5  is-size-6-mobile mb-3">Her rare ability to blend artistry, user
+                                    experience, technical skill, and active listening without compromising on
+                                    functionality or aesthetics is indeed a gift. Her contributions have been invaluable
+                                    to our team, and I am confident she will bring the same level of dedication and
+                                    innovation to your organization.
+                                </h5>
+                                <p class="block is-uppercase is-size-7">
+                                    Gavin F.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testNav is-justify-content-space-between mt-6">
+                        <div id="prev" onclick="show_testimonial(-1)" class="arrow left">
+                            <i class="fa-solid fa-angle-left is-size-2"></i>
+                        </div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div id="next" onclick="show_testimonial(1)" class="arrow right">
+                            <i class="fa-solid fa-angle-right  is-size-2"></i>
+                        </div>
+                    </div>
+                    <div class="is-flex is-justify-content-center mt-3">
+                        <button id="stop" class="button is-light mr-1 is-fullwidth" onclick="stopAni()">
+                            <i class="fa-solid fa-pause"></i></button>
+                        <button id="restart" class="button is-light is-fullwidth" onclick="reStartAni()" disabled>
+                            <i class="fa-solid fa-arrows-rotate"></i></button>
                     </div>
                 </div>
             </div>

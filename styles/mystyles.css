@@ -10343,7 +10343,7 @@ ul.my-list > li:before {
 }
 
 .jump-to-section {
-  height: 1.5rem;
+  height: 0.5rem;
   display: block;
 }
 
@@ -10395,4 +10395,69 @@ footer .back-top {
 .profile-pic {
   max-width: 18.75rem;
   padding: 1rem;
+}
+
+.testimonial {
+  display: none;
+}
+
+.testNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+#prev {
+  cursor: pointer;
+  color: #212121;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+#next {
+  cursor: pointer;
+  color: #212121;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+#prev:hover, #next:hover {
+  color: hsla(0, 0%, 13%, 0.185);
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dot {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50px;
+  background: hsla(0, 0%, 13%, 0.185);
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background: hsl(0, 0%, 0%);
+}
+
+.trans {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=mystyles.css.map */
