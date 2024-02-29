@@ -57,25 +57,16 @@ function reStartAni() {
   location.reload();
 }
 
-var contactForm = document.getElementById("contact-form");
-contactForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var contactName = document.getElementById("contact-name");
-  var contactEmail = document.getElementById("contact-email");
-  var contactMessage = document.getElementById("contact-message");
+emailjs.init("your_user_id");
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission behavior
+  // Get the form data
 
-  if (contactName.value === "" || contactEmail.value === "" || contactMessage.value === "") {
-    // throw error
-    alert("Please fill in all fields");
-    console.log("empty fields!!!");
-  } else {
-    // perform operation with form input
-    console.log("Ready to send");
-    alert("Your message has successfully been sent.");
-  }
+  var formData = new FormData(e.target); // Send the email
 
-  ;
-  contactName.value = "";
-  contactEmail.value = "";
-  contactMessage.value = "";
+  emailjs.sendForm("your_service_id", "your_template_id", formData).then(function (response) {
+    console.log("Email sent successfully", response); // You can add code here to show a success message or redirect the user
+  }, function (error) {
+    console.error("Email sending failed", error); // You can add code here to show an error message
+  });
 });
