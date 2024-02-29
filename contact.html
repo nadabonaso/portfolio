@@ -126,15 +126,15 @@
                                 <input class="button is-link" type="submit" value="Send">
                             </div>
                         </div>
-                        <!-- <div class="field is-grouped">
-                            <div class="control">
-                                <button class="button is-link">Submit</button>
-                            </div>
-                        </div> -->
-
                     </form>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-6">
+            <h1 class="title">Thank you - message sent!</h1>
         </div>
     </section>
 
@@ -176,6 +176,16 @@
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "d0xA0PIeIMWDmbt_a",
+            });
+        })();
+    </script>
+
 </body>
 
 </html>

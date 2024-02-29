@@ -69,7 +69,7 @@ function reStartAni() {
 }
 
 
-emailjs.init("your_user_id");
+// emailjs.init("d0xA0PIeIMWDmbt_a");
 
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent the default form submission behavior

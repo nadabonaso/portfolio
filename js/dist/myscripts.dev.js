@@ -55,9 +55,9 @@ function stopAni() {
 
 function reStartAni() {
   location.reload();
-}
+} // emailjs.init("d0xA0PIeIMWDmbt_a");
 
-emailjs.init("your_user_id");
+
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent the default form submission behavior
   // Get the form data
