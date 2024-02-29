@@ -67,3 +67,27 @@ function stopAni() {
 function reStartAni() {
     location.reload();
 }
+
+
+let contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let contactName = document.getElementById("contact-name");
+    let contactEmail = document.getElementById("contact-email");
+    let contactMessage = document.getElementById("contact-message");
+
+    if (contactName.value === "" || contactEmail.value === "" || contactMessage.value === "") {
+        // throw error
+        alert("Please fill in all fields")
+        console.log("empty fields!!!")
+    } else {
+        // perform operation with form input
+        console.log("Ready to send")
+        alert("Your message has successfully been sent.")
+    };
+    contactName.value = "";
+    contactEmail.value = "";
+    contactMessage.value = "";
+});

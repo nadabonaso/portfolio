@@ -56,3 +56,26 @@ function stopAni() {
 function reStartAni() {
   location.reload();
 }
+
+var contactForm = document.getElementById("contact-form");
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var contactName = document.getElementById("contact-name");
+  var contactEmail = document.getElementById("contact-email");
+  var contactMessage = document.getElementById("contact-message");
+
+  if (contactName.value === "" || contactEmail.value === "" || contactMessage.value === "") {
+    // throw error
+    alert("Please fill in all fields");
+    console.log("empty fields!!!");
+  } else {
+    // perform operation with form input
+    console.log("Ready to send");
+    alert("Your message has successfully been sent.");
+  }
+
+  ;
+  contactName.value = "";
+  contactEmail.value = "";
+  contactMessage.value = "";
+});
