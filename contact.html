@@ -176,17 +176,15 @@
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
 
     <script>
-        // emailjs.init("d0xA0PIeIMWDmbt_a");
+        emailjs.init("d0xA0PIeIMWDmbt_a");
 
-        (function () {
-            emailjs.init({
-                publicKey: "d0xA0PIeIMWDmbt_a",
-            });
-        })();
+        // (function () {
+        //     emailjs.init({
+        //         publicKey: "d0xA0PIeIMWDmbt_a",
+        //     });
+        // })();
 
 
         document.getElementById("contact-form").addEventListener("submit", function (e) {
