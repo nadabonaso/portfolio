@@ -36,15 +36,17 @@
     <!-- Form scripts -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+
+    <!-- <script type="text/javascript">
         (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
                 publicKey: "d0xA0PIeIMWDmbt_a",
             });
         })();
-    </script>
-    <script type="text/javascript">
+    </script> -->
+
+    <!-- <script type="text/javascript">
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
@@ -57,7 +59,11 @@
                     });
             });
         }
-    </script>
+
+        function submitForm() {
+            document.getElementById("clk").disabled = true;
+        }
+    </script> -->
 
     <style>
         .submit-success,
@@ -130,7 +136,10 @@
                     <p class="block mb-6">
                         I'm available to collaborate remotely on freelance projects or part-time contracts worldwide.
                     </p>
-                    <form id="contact-form" class="my-6" method="post">
+
+                    <!--form-->
+                    <form id="contact-form" class="my-6" action="https://formsubmit.co/80380174f153d7253a883e75e8c71980"
+                        method="POST">
                         <div class="field">
                             <label for="name" class="label">Name</label>
                             <p class="control is-expanded has-icons-left">
@@ -163,8 +172,7 @@
                         <div class="g-recaptcha my-4" data-sitekey="6Ld_wIUpAAAAAFB3HnsMQ6fsTFrOCHbYGUdjcOI0"></div>
                         <div class="field">
                             <div class="control">
-                                <input class="button is-link" type="submit" value="Send" onclick="submitForm()"
-                                    id="clk">
+                                <input class="button is-link" type="submit" value="Send">
                             </div>
                         </div>
                         <div class="container p-6 submit-success" data-submit="">
@@ -218,11 +226,6 @@
     <!-- javascript includes -->
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
-    <script>
-        function submitForm() {
-            document.getElementById("clk").disabled = true;
-        }
-    </script>
 
 </body>
 
