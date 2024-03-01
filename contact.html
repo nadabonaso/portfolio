@@ -58,7 +58,13 @@
         }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+    <style>
+        .submit-success,
+        .submit-error {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -127,8 +133,8 @@
                         <div class="field">
                             <label for="name" class="label">Name</label>
                             <p class="control is-expanded has-icons-left">
-                                <input type="text" id="name" class="input is-light is-shadowless" placeholder="e.g Alex Smith" name="from_name"
-                                    required>
+                                <input type="text" id="name" class="input is-light is-shadowless"
+                                    placeholder="e.g Alex Smith" name="from_name" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -138,8 +144,8 @@
                         <div class="field">
                             <label for="email" class="label">Email</label>
                             <p class="control is-expanded has-icons-left has-icons-right">
-                                <input type="email" id="email" class="input is-light is-shadowless" placeholder="e.g alexsmith@gmail.com"
-                                    name="from_email" required>
+                                <input type="email" id="email" class="input is-light is-shadowless"
+                                    placeholder="e.g alexsmith@gmail.com" name="from_email" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -149,8 +155,8 @@
                         <div class="field">
                             <label for="message" class="label">Message</label>
                             <div class="control">
-                                <textarea id="message" class="textarea is-light is-shadowless" placeholder="Type your message" name="message"
-                                    required></textarea>
+                                <textarea id="message" class="textarea is-light is-shadowless"
+                                    placeholder="Type your message" name="message" required></textarea>
                             </div>
                         </div>
                         <div class="g-recaptcha my-4" data-sitekey="6Ld_wIUpAAAAAFB3HnsMQ6fsTFrOCHbYGUdjcOI0"></div>
@@ -159,11 +165,17 @@
                                 <input class="button is-link" type="submit" value="Send">
                             </div>
                         </div>
+                        <div class="container p-6 submit-success" data-submit="">
+                            <h2 class="title has-text-centered">Your message has been sent.</h2>
+                        </div>
+                        <div class="container p-6 submit-error" data-submit="">
+                            <h2 class="title has-text-centered">Error.</h2>
+                        </div>
                     </form>
-                    <p id = "output"> </p>
-                    <div class="container p-6 is-hidden" >
+                    <p id="output"> </p>
+                    <!-- <div class="container p-6 is-hidden" >
                         <h2 class="title has-text-centered">Your message has been sent.</h2>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="column"></div>
             </div>
@@ -208,14 +220,43 @@
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
     <script>
-        let output = document.getElementById('output');
-        const formToReset = document.getElementById('contact-form');
-        formToReset.addEventListener('submit', (e) => {
-           e.preventDefault();
-           formToReset.reset();
-           output.innerHTML += "The form is resetted successfully!"
-        });
-     </script>
+        // let output = document.getElementById('output');
+        // const formToReset = document.getElementById('contact-form');
+        // formToReset.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     formToReset.reset();
+        //     output.innerHTML += "The form is resetted successfully!"
+        // });
+
+        document
+            .querySelector("form")
+            .addEventListener("submit", handleSubmit);
+
+        const submitSuccess = document.querySelector('.submit-success')
+        const submitError = document.querySelector('.submit-error')
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            let myForm = document.getElementById("contact-form");
+            let formData = new FormData(myForm);
+            fetch("/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams(formData).toString(),
+                })
+
+                .then(() => {
+                    submitSuccess.style.display = 'block';
+                    submitError.style.display = null;
+                })
+                .catch((error) => {
+                    submitError.style.display = 'block';
+                    submitSuccess.style.display = null;
+                });
+        };
+    </script>
 
 </body>
 
