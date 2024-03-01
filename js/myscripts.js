@@ -1,3 +1,4 @@
+// Navbar menu
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -20,41 +21,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// let output = document.getElementById('output');
-// const formToReset = document.getElementById('contact-form');
-// formToReset.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     formToReset.reset();
-//     output.innerHTML += "The form is resetted successfully!"
-// });
+// Slider tesimonials
+let index = 0;
+document.getElementById("restart").setAttribute('disabled', '');
+show_testimonial(index);
 
+function show_testimonial(i) {
+    index += i;
 
+    let testimonials = document.getElementsByClassName("testimonial");
 
-// document
-//     .querySelector("form")
-//     .addEventListener("submit", handleSubmit);
+    let dots = document.getElementsByClassName("dot");
 
-// const submitSuccess = document.querySelector('.submit-success')
-// const submitError = document.querySelector('.submit-error')
+    for (i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = "none";
+    }
 
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-//     let myForm = document.getElementById("contact-form");
-//     let formData = new FormData(myForm);
-//     fetch("/", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/x-www-form-urlencoded"
-//             },
-//             body: new URLSearchParams(formData).toString(),
-//         })
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
 
-//         .then(() => {
-//             submitSuccess.style.display = 'block';
-//             submitError.style.display = null;
-//         })
-//         .catch((error) => {
-//             submitError.style.display = 'block';
-//             submitSuccess.style.display = null;
-//         });
-// };
+    if (index > testimonials.length - 1)
+        index = 0;
+
+    if (index < 0)
+        index = testimonials.length - 1;
+
+    testimonials[index].style.display = "block";
+    dots[index].className += " active";
+}
+
+let myInterval = setInterval(startAni, 10000);
+
+function startAni() {
+    document.getElementById("restart").setAttribute('disabled', '');
+    document.getElementById("stop").removeAttribute('disabled');
+    document.getElementById("next").click();
+}
+
+function stopAni() {
+    document.getElementById("stop").setAttribute('disabled', '');
+    document.getElementById("restart").removeAttribute('disabled');
+    clearInterval(myInterval);
+}
+
+function reStartAni() {
+    location.reload();
+}
