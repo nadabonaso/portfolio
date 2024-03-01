@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles/mystyles.css">
     <!-- Form scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -57,7 +58,7 @@
             });
         }
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
         .submit-success,
         .submit-error {
@@ -129,7 +130,7 @@
                     <p class="block mb-6">
                         I'm available to collaborate remotely on freelance projects or part-time contracts worldwide.
                     </p>
-                    <form id="contact-form" class="my-6">
+                    <form id="contact-form" class="my-6" method="post">
                         <div class="field">
                             <label for="name" class="label">Name</label>
                             <p class="control is-expanded has-icons-left">
@@ -162,7 +163,8 @@
                         <div class="g-recaptcha my-4" data-sitekey="6Ld_wIUpAAAAAFB3HnsMQ6fsTFrOCHbYGUdjcOI0"></div>
                         <div class="field">
                             <div class="control">
-                                <input class="button is-link" type="submit" value="Send">
+                                <input class="button is-link" type="submit" value="Send" onclick="submitForm()"
+                                    id="clk">
                             </div>
                         </div>
                         <div class="container p-6 submit-success" data-submit="">
@@ -173,9 +175,6 @@
                         </div>
                     </form>
                     <!-- <p id="output"> </p> -->
-                    <!-- <div class="container p-6 is-hidden" >
-                        <h2 class="title has-text-centered">Your message has been sent.</h2>
-                    </div> -->
                 </div>
                 <div class="column"></div>
             </div>
@@ -220,44 +219,9 @@
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
     <script>
-        // let output = document.getElementById('output');
-        // const formToReset = document.getElementById('contact-form');
-        // formToReset.addEventListener('submit', (e) => {
-        //     e.preventDefault();
-        //     formToReset.reset();
-        //     output.innerHTML += "The form is resetted successfully!"
-        // });
-
-
-
-        // document
-        //     .querySelector("form")
-        //     .addEventListener("submit", handleSubmit);
-
-        // const submitSuccess = document.querySelector('.submit-success')
-        // const submitError = document.querySelector('.submit-error')
-
-        // const handleSubmit = (e) => {
-        //     e.preventDefault();
-        //     let myForm = document.getElementById("contact-form");
-        //     let formData = new FormData(myForm);
-        //     fetch("/", {
-        //             method: "POST",
-        //             headers: {
-        //                 "Content-Type": "application/x-www-form-urlencoded"
-        //             },
-        //             body: new URLSearchParams(formData).toString(),
-        //         })
-
-        //         .then(() => {
-        //             submitSuccess.style.display = 'block';
-        //             submitError.style.display = null;
-        //         })
-        //         .catch((error) => {
-        //             submitError.style.display = 'block';
-        //             submitSuccess.style.display = null;
-        //         });
-        // };
+        function submitForm() {
+            document.getElementById("clk").disabled = true;
+        }
     </script>
 
 </body>
