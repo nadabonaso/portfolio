@@ -57,6 +57,8 @@
             });
         }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 
 <body>
@@ -151,14 +153,15 @@
                                     required></textarea>
                             </div>
                         </div>
-
+                        <div class="g-recaptcha my-4" data-sitekey="6Ld_wIUpAAAAAFB3HnsMQ6fsTFrOCHbYGUdjcOI0"></div>
                         <div class="field">
                             <div class="control">
                                 <input class="button is-link" type="submit" value="Send">
                             </div>
                         </div>
                     </form>
-                    <div class="container p-6 is-hidden">
+                    <p id = "output"> </p>
+                    <div class="container p-6 is-hidden" >
                         <h2 class="title has-text-centered">Your message has been sent.</h2>
                     </div>
                 </div>
@@ -204,7 +207,15 @@
     <!-- javascript includes -->
     <script src="js/myscripts.js"></script>
     <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
-
+    <script>
+        let output = document.getElementById('output');
+        const formToReset = document.getElementById('contact-form');
+        formToReset.addEventListener('submit', (e) => {
+           e.preventDefault();
+           formToReset.reset();
+           output.innerHTML += "The form is resetted successfully!"
+        });
+     </script>
 
 </body>
 
