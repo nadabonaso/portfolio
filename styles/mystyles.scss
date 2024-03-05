@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 // Set your brand colors
-$purple: #233CF8;
+$purple: #233cf8;
 $pink: #fe5084;
 $white: #ffffff;
 $black: #212121;
-
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -16,8 +15,6 @@ $grey-dark: $black;
 $primary: $purple;
 $link: $black;
 $body-size: 1.125rem;
-
-
 
 // Update some of Bulma's component variables
 $body-background-color: $white;
@@ -30,182 +27,185 @@ $card-content-padding: 2rem;
 // Import only what you need from Bulma
 @import "../bulma-0.9.4/bulma/bulma.sass";
 
-
 // My Custom CSS
 .my-section-headings {
-    text-transform: uppercase;
-    position: left;
-    margin-bottom: 2rem;
-    color: $black;
+  text-transform: uppercase;
+  position: left;
+  margin-bottom: 2rem;
+  color: $black;
 }
 
 .hr-lines:before {
-    content: "";
-    display: inline-block;
-    width: 3.12rem;
-    height: 0.125rem;
-    background: $black;
-    vertical-align: top;
-    margin-top: 0.625rem;
-    margin-right: 1rem;
+  content: "";
+  display: inline-block;
+  width: 3.12rem;
+  height: 0.125rem;
+  background: $black;
+  vertical-align: top;
+  margin-top: 0.625rem;
+  margin-right: 1rem;
 }
 
 .hr-line {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 0.25rem;
-    background: $link-light;
-    vertical-align: top;
-    margin: 10rem 0;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.25rem;
+  background: $link-light;
+  vertical-align: top;
+  margin: 10rem 0;
 }
 
 ul.my-list {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-ul.my-list>li:before {
-    content: "";
-    display: inline-block;
-    width: 3.12rem;
-    height: 0.125rem;
-    background: $black;
-    vertical-align: top;
-    margin-top: 0.625rem;
-    margin-right: 1rem;
+ul.my-list > li:before {
+  content: "";
+  display: inline-block;
+  width: 3.12rem;
+  height: 0.125rem;
+  background: $black;
+  vertical-align: top;
+  margin-top: 0.625rem;
+  margin-right: 1rem;
 }
 
 .navbar-item img {
-    max-height: 2.5rem;
+  max-height: 2.5rem;
 }
 
 .navbar-brand,
 .navbar-tabs {
-    min-height: 4rem;
+  min-height: 4rem;
 }
 
 .navbar-menu {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .jump-to-section {
-    height: 0.5rem;
-    display: block;
+  height: 0.5rem;
+  display: block;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .footer-links ul li {
-    display: inline-block;
-    padding-left: 1.2rem;
+  display: inline-block;
+  padding-left: 1.2rem;
 }
 
 footer p {
-    color: $grey-light;
+  color: $grey-light;
 }
 
 footer .back-top {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .xl-heading {
-    font-size: 5rem;
-    line-height: 4.6rem;
+  font-size: 5rem;
+  line-height: 4.6rem;
 }
 
-@media(max-width:1216px){
-    .xl-heading {
-        font-size: 4rem;
-        line-height: 3.6rem;
-    }
+@media (max-width: 1216px) {
+  .xl-heading {
+    font-size: 4rem;
+    line-height: 3.6rem;
+  }
 }
 
 .footer {
-    background-color: $link-light;
+  background-color: $link-light;
 }
 
 .block:not(:last-child) {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .cs.block:not(:last-child) {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 .tag {
-    background-color: $primary-light;
-    color: $primary;
+  background-color: $primary-light;
+  color: $primary;
 }
 
 .profile-pic {
-    max-width: 18.75rem;
-    padding: 1rem;
+  max-width: 18.75rem;
+  padding: 1rem;
 }
 
-.testimonial{
-    display: none;
+.testimonial {
+  display: none;
 }
 
-.testNav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
+.testNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
-#prev{
-    cursor: pointer;
-    // color: hsla(0, 0%, 13%, 0.185);
-    color: $black;
-    width:fit-content;
-    transition: all 0.2s ease;
+#prev {
+  cursor: pointer;
+  // color: hsla(0, 0%, 13%, 0.185);
+  color: $black;
+  width: fit-content;
+  transition: all 0.2s ease;
 }
 
-#next{
-    cursor: pointer;
-    color: $black;
-    // color: hsla(0, 0%, 13%, 0.185);
-    width:fit-content;
-    transition: all 0.2s ease;
+#next {
+  cursor: pointer;
+  color: $black;
+  // color: hsla(0, 0%, 13%, 0.185);
+  width: fit-content;
+  transition: all 0.2s ease;
 }
 
-#prev:hover, #next:hover{
-    color: hsla(0, 0%, 13%, 0.185);
-    // color: $black;
+#prev:hover,
+#next:hover {
+  color: hsla(0, 0%, 13%, 0.185);
+  // color: $black;
 }
 
-.dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem;
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.dot{
-    // cursor: pointer;
-    height: 0.6rem;
-    width: 0.6rem;
-    border-radius: 50px;
-    background: hsla(0, 0%, 13%, 0.185);
-    transition: background-color 0.5s ease;
+.dot {
+  // cursor: pointer;
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50px;
+  background: hsla(0, 0%, 13%, 0.185);
+  transition: background-color 0.5s ease;
 }
 
-.active{
-    background: hsl(0, 0%, 0%);
+.active {
+  background: hsl(0, 0%, 0%);
 }
 
-.trans{
-    animation-name: fade;
-    animation-duration: 1s;
+.trans {
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
-    from {opacity: 0.1;}
-    to {opacity: 1;}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
