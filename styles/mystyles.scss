@@ -153,26 +153,24 @@ footer .back-top {
   align-content: center;
 }
 
-#prev {
+#prev:link,
+#prev:active,
+#next:link,
+#next:active {
   cursor: pointer;
   // color: hsla(0, 0%, 13%, 0.185);
   color: $black;
-  width: fit-content;
-  transition: all 0.2s ease;
-}
-
-#next {
-  cursor: pointer;
-  color: $black;
-  // color: hsla(0, 0%, 13%, 0.185);
   width: fit-content;
   transition: all 0.2s ease;
 }
 
 #prev:hover,
-#next:hover {
+#prev:visited,
+#next:hover,
+#next:visited {
   color: hsla(0, 0%, 13%, 0.185);
   // color: $black;
+  cursor: pointer;
 }
 
 .dots {

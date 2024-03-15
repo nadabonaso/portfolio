@@ -10408,15 +10408,10 @@ footer .back-top {
   align-content: center;
 }
 
-#prev {
-  cursor: pointer;
-  color: #212121;
-  width: -moz-fit-content;
-  width: fit-content;
-  transition: all 0.2s ease;
-}
-
-#next {
+#prev:link,
+#prev:active,
+#next:link,
+#next:active {
   cursor: pointer;
   color: #212121;
   width: -moz-fit-content;
@@ -10425,8 +10420,11 @@ footer .back-top {
 }
 
 #prev:hover,
-#next:hover {
+#prev:visited,
+#next:hover,
+#next:visited {
   color: hsla(0, 0%, 13%, 0.185);
+  cursor: pointer;
 }
 
 .dots {
