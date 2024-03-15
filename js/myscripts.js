@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Slider tesimonials
 let index = 0;
-document.getElementById("restart").setAttribute("disabled", "");
+// document.getElementById("restart").setAttribute("disabled", "");
 show_testimonial(index);
 
 function show_testimonial(i) {
@@ -48,20 +48,20 @@ function show_testimonial(i) {
   dots[index].className += " active";
 }
 
-let myInterval = setInterval(startAni, 10000);
+// let myInterval = setInterval(startAni, 10000);
 
-function startAni() {
-  document.getElementById("restart").setAttribute("disabled", "");
-  document.getElementById("stop").removeAttribute("disabled");
-  document.getElementById("next").click();
-}
+// function startAni() {
+//   document.getElementById("restart").setAttribute("disabled", "");
+//   document.getElementById("stop").removeAttribute("disabled");
+//   document.getElementById("next").click();
+// }
 
-function stopAni() {
-  document.getElementById("stop").setAttribute("disabled", "");
-  document.getElementById("restart").removeAttribute("disabled");
-  clearInterval(myInterval);
-}
+// function stopAni() {
+//   document.getElementById("stop").setAttribute("disabled", "");
+//   document.getElementById("restart").removeAttribute("disabled");
+//   clearInterval(myInterval);
+// }
 
-function reStartAni() {
-  location.reload();
-}
+// function reStartAni() {
+//   location.reload();
+// }
