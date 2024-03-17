@@ -1,652 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VM2F4C0SR"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9VM2F4C0SR"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-9VM2F4C0SR');
+      gtag("config", "G-9VM2F4C0SR");
     </script>
     <!-- page details -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
-    <!-- Always include this for media queries to work -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speech Writing Software Tool &mdash; Nada Bonaso</title>
-    <meta name="description" content="UX Case Study for an AI-Powered SaaS Speech Writing Tool" />
-    <link rel="icon" type="image/x-icon" href="images/favicon_io_black/favicon.ico">
+    <meta
+      name="description"
+      content="UX Case Study for an AI-Powered SaaS Speech Writing Tool"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon_io_black/favicon.ico"
+    />
     <!-- open graph tags -->
     <meta property="og:site_name" content="Nada Bonaso" />
-    <meta property="og:title" content="Speech Writing Software Tool &mdash; Nada Bonaso" />
-    <meta property="og:description" content="UX case study for an AI-Powered SaaS sermon creation tool" />
+    <meta
+      property="og:title"
+      content="Speech Writing Software Tool &mdash; Nada Bonaso"
+    />
+    <meta
+      property="og:description"
+      content="UX case study for an AI-Powered SaaS sermon creation tool"
+    />
     <meta property="og:url" content="https://www.nadabonaso.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png" />
-    <meta property="og:image:secure_url" content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png" />
+    <meta
+      property="og:image"
+      content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png"
+    />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="314" />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="styles/mystyles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles/mystyles.css" />
+  </head>
 
-<body>
-
-    <!---nav bar--------------------------------------------------->
-    <nav class="navbar is-transparent mb-4" role="navigation" aria-label="main navigation">
-        <div class="container is-max-fullhd">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="images/favicon_io_black/apple-touch-icon.png" alt="Nada Bonaso logo">&nbsp;nada bonaso
-                </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item is-active" href="index.html#work" target="_self">
-                        Projects
-                    </a>
-                    <a class="navbar-item " href="about.html" target="_self">
-                        About
-                    </a>
-                    <a class="navbar-item" href="contact.html" target="_self">
-                        Contact
-                    </a>
-                </div>
-            </div>
+  <body>
+    <!--nav bar-->
+    <nav
+      class="navbar is-transparent mb-4"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container is-max-fullhd">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img
+              src="images/favicon_io_black/apple-touch-icon.png"
+              alt="Nada Bonaso logo"
+            />&nbsp;nada bonaso
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a
+              class="navbar-item is-active"
+              href="index.html#work"
+              target="_self"
+            >
+              Projects
+            </a>
+            <a class="navbar-item" href="about.html" target="_self"> About </a>
+            <a class="navbar-item" href="contact.html" target="_self">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <!---hero-------------------------->
+    <!--hero-->
     <section class="hero">
-        <div class="hero-head">
-            <div class="container is-max-fullhd">
-                <figure class="image">
-                    <img src="images/CS PP Hero.jpg" alt="Cover image for an AI-Powered SaaS Speech Writing tool">
-                </figure>
-            </div>
+      <div class="hero-head">
+        <div class="container is-max-fullhd">
+          <figure class="image">
+            <img
+              src="images/PP_Hero.jpg"
+              alt="Cover image for an AI-Powered SaaS Speech Writing tool"
+            />
+          </figure>
         </div>
+      </div>
     </section>
 
-    <!--overview----------------->
+    <!--overview-->
     <section class="section pb-0">
-        <div class="container is-max-fullhd">
-            <div class="columns">
-                <div class="column is-8-desktop is-10-tablet">
-                    <h1 class="title is-1 is-size-2-mobile">
-                        UX Design for an AI-Powered SaaS Speech Writing Tool
-                    </h1>
-                    <p class="subtitle is-6 has-text-grey pt-2">UX UI DESIGN</p>
-                </div>
-                <!-- nav arrows ------------->
-                <div class="column">
-                    <div class="columns is-mobile">
-                        <div class="column is-1-tablet is-8-desktop is-10-widescreen has-text-right-desktop">
-                            <a class="is-size-2" href="case-study-02.html" aria-label="Previous project"><i class="fa-solid fa-arrow-left"></i>
-                            </a>
-                        </div>
-                        <div class="column has-text-right">
-                            <a class="is-size-2" href="case-study-01.html" aria-label="Next project">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container is-max-fullhd">
+        <div class="columns">
+          <div class="column is-8-desktop is-10-tablet">
+            <h1 class="title is-1 is-size-2-mobile">
+              UX Design for an AI-Powered SaaS Speech Writing Tool
+            </h1>
+            <p class="subtitle is-6 has-text-grey pt-2">UX UI DESIGN</p>
+          </div>
+          <!-- nav arrows -->
+          <div class="column">
+            <div class="columns is-mobile">
+              <div
+                class="column is-1-tablet is-8-desktop is-10-widescreen has-text-right-desktop"
+              >
+                <a
+                  class="is-size-2"
+                  href="case-study-02.html"
+                  aria-label="Previous project"
+                  ><i class="fa-solid fa-arrow-left"></i>
+                </a>
+              </div>
+              <div class="column has-text-right">
+                <a
+                  class="is-size-2"
+                  href="case-study-01.html"
+                  aria-label="Next project"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="section pb-0">
-        <div class="container is-max-fullhd">
-            <div class="columns is-flex-tablet">
-                <div class="column is-4">
-                    <h3 class="has-text-weight-bold">Role</h3>
-                    <p class="block">UX UI Designer</p>
-                    <h3 class="has-text-weight-bold">Team</h3>
-                    <p class="block">Product Owner, Engineers,
-                        UX Designer</p>
-                    <h3 class="has-text-weight-bold">Duration</h3>
-                    <p>4 months</p>
-                </div>
-                <div class="column pb-0">
-                    <p class="block">My client noticed that pastors could use a little help crafting their sermons. With
-                        substantial workloads, pastors invest extensive hours crafting engaging sermons.</p>
-                    <p class="block">We set out to create an AI-powered tool to act as a creative companion for pastors
-                        and potentially revolutionize their sermon crafting experience.</p>
-                    <p>Playing a crucial role in the project, I collaborated closely with cross-functional teams spread
-                        across the globe. My focus extended beyond shaping functionality to designing the product's
-                        appearance and overall user experience.</p>
-                </div>
-            </div>
-            <div class="hr-line"></div>
+      <div class="container is-max-fullhd">
+        <div class="columns is-flex-tablet">
+          <div class="column is-4">
+            <h3 class="has-text-weight-bold">Role</h3>
+            <p class="block">UX UI Designer</p>
+            <h3 class="has-text-weight-bold">Team</h3>
+            <p class="block">Product Owner, Engineers, UX Designer</p>
+            <h3 class="has-text-weight-bold">Duration</h3>
+            <p>4 months</p>
+          </div>
+          <div class="column pb-0">
+            <p class="block">
+              My client noticed that pastors could use a little help crafting
+              their sermons. With substantial workloads, pastors invest
+              extensive hours crafting engaging sermons.
+            </p>
+            <p class="block">
+              We set out to create an AI-powered tool to act as a creative
+              companion for pastors and potentially revolutionize their sermon
+              crafting experience.
+            </p>
+            <p>
+              Playing a crucial role in the project, I collaborated closely with
+              cross-functional teams spread across the globe. My focus extended
+              beyond shaping functionality to designing the product's appearance
+              and overall user experience.
+            </p>
+          </div>
         </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--problem ----------------->
+    <!--problem -->
     <section class="section py-0">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">Problem</h2>
-            </div>
-            <div class="columns level is-multiline">
-                <div class="column is-8-desktop">
-                    <div class="content my-5">
-                        <h3 class="is-size-2 is-size-3-mobile block">How can we help make sermon planning quicker for
-                            pastors?
-                        </h3>
-                        <p class="block">Reports indicate that a significant number of pastors encounter difficulties in
-                            consistently producing high-quality and impactful sermons. More than half express feelings
-                            of being overworked and are unable to meet their church's expectations.</p>
-                    </div>
-                </div>
-                <div class="column is-4-desktop">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="py-4">
-                                <img src="images/SVG/quote-bold-black.svg" width="60px" alt="Quoatation marks" />
-                            </div>
-                            <p class="title is-size-2 has-text-right">
-                                45%
-                            </p>
-                            <p class="subtitle has-text-right pb-4">
-                                of pastors spend 10 to 15 hours a week on sermon preparation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-8-desktop">
-                    <p class="is-size-7 has-text-grey">
-                        <span>
-                            © 2016, (research from 1989 to 2016, ongoing)
-                            Schaeffer Institute of leadership Development, lead researcher Rev. Richard J.
-                            Krejcir,
-                            Ph.D., www.churchleadership.org
-                    </p>
-                </div>
-            </div>
-            <div class="hr-line"></div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">Problem</h2>
         </div>
+        <div class="columns level is-multiline">
+          <div class="column is-8-desktop">
+            <div class="content my-5">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                How can we help make sermon planning quicker for pastors?
+              </h3>
+              <p class="block">
+                Reports indicate that a significant number of pastors encounter
+                difficulties in consistently producing high-quality and
+                impactful sermons. More than half express feelings of being
+                overworked and are unable to meet their church's expectations.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4-desktop">
+            <div class="card">
+              <div class="card-content">
+                <div class="py-4">
+                  <img
+                    src="images/SVG/quote-bold-black.svg"
+                    width="60"
+                    alt="Quoatation marks"
+                  />
+                </div>
+                <p class="title is-size-2 has-text-right">45%</p>
+                <p class="subtitle has-text-right pb-4">
+                  of pastors spend 10 to 15 hours a week on sermon preparation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-8-desktop">
+            <p class="is-size-7 has-text-grey">
+              © 2016, (research from 1989 to 2016, ongoing) Schaeffer Institute
+              of leadership Development, lead researcher Rev. Richard J.
+              Krejcir, Ph.D., www.churchleadership.org
+            </p>
+          </div>
+        </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--solution ----------------->
+    <!--solution -->
     <section class="section pb-0">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">SOLUTION</h2>
-            </div>
-            <div class="columns">
-                <div class="column is-9-desktop pb-0">
-                    <div class="content">
-                        <h3 class="is-size-2 is-size-3-mobile block">Software that kickstarts the creative process.
-                        </h3>
-                        <p class="block">With a long history of serving the church community through technical products,
-                            my client identified the untapped potential of using AI to assist pastors in the area
-                            identified.</p>
-                        <p class="block">Our solution was to create a web application using GPT-4 that would transform
-                            the sermon theme creation process into a dynamic collaboration between a pastor's initial
-                            insights and the power of AI.</p>
-                        <p class="block">The primary objective was to enhance user satisfaction by simplifying and
-                            automating aspects of their process. It needed to be easy to learn with a focus on
-                            efficiency.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hr-line"></div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">SOLUTION</h2>
         </div>
+        <div class="columns">
+          <div class="column is-9-desktop pb-0">
+            <div class="content">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Software that kickstarts the creative process.
+              </h3>
+              <p class="block">
+                With a long history of serving the church community through
+                technical products, my client identified the untapped potential
+                of using AI to assist pastors in the area identified.
+              </p>
+              <p class="block">
+                Our solution was to create a web application using GPT-4 that
+                would transform the sermon theme creation process into a dynamic
+                collaboration between a pastor's initial insights and the power
+                of AI.
+              </p>
+              <p class="block">
+                The primary objective was to enhance user satisfaction by
+                simplifying and automating aspects of their process. It needed
+                to be easy to learn with a focus on efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--research ----------------->
+    <!--research -->
     <section class="section pt-0 mb-6">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">UX Reseach</h2>
-            </div>
-            <div class="columns is-variable is-6 level">
-                <div class="column is-6">
-                    <div class="content">
-                        <h3 class="is-size-2 is-size-3-mobile block">Competitor Analysis
-                        </h3>
-                        <p class="block">I began by researching speech writing tools, such as Speech Formula and Speech
-                            Generator, to identify common attributes and benefits. I then began
-                            reviewing tools that leverage AI, such as Evernote, Jasper and Grammarly. This helped me
-                            evaluate common design patterns, including good and bad examples
-                            of user experience and interface design. It also allowed me begin identifying mental models
-                            which may best
-                            suit our users.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <figure class="image">
-                        <img src="images/CS PP Research 01.jpg" alt="Screenshot of researching Evernote">
-                    </figure>
-                </div>
-            </div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">UX Reseach</h2>
         </div>
+        <div class="columns is-variable is-6 level">
+          <div class="column is-6">
+            <div class="content">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Competitor Analysis
+              </h3>
+              <p class="block">
+                I began by researching speech writing tools, such as Speech
+                Formula and Speech Generator, to identify common attributes and
+                benefits. I then began reviewing tools that leverage AI, such as
+                Evernote, Jasper and Grammarly. This helped me evaluate common
+                design patterns, including good and bad examples of user
+                experience and interface design. It also allowed me begin
+                identifying mental models which may best suit our users.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img
+                src="images/PP_Research_01.jpg"
+                alt="Screenshot of researching Evernote"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section mb-6">
-        <div class="container is-max-widescreen">
-            <div class="columns mb-6">
-                <div class="column is-9-desktop">
-                    <div class="content mt-5">
-                        <h3 class="is-size-2 is-size-3-mobile block">Conducting user research to gather insights and
-                            foster
-                            empathy.
-                        </h3>
-                        <p class="block">I interviewed stakeholders remotely to learn about pastors, their primary
-                            clients. Their expertise provided valuable insights into pastors' needs, including the tools
-                            and workflows used during sermon creation.</p>
-                        <p class="block"> After analyzing the information, I decided to create a proto persona based on
-                            stakeholder insights and my online research. This was the most practical choice considering
-                            budget and time constraints and ensuring alignment on user needs throughout the project.
-                        </p>
-                    </div>
-                </div>
+      <div class="container is-max-widescreen">
+        <div class="columns mb-6">
+          <div class="column is-9-desktop">
+            <div class="content mt-5">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Conducting user research to gather insights and foster empathy.
+              </h3>
+              <p class="block">
+                I interviewed stakeholders remotely to learn about pastors,
+                their primary clients. Their expertise provided valuable
+                insights into pastors' needs, including the tools and workflows
+                used during sermon creation.
+              </p>
+              <p class="block">
+                After analyzing the information, I decided to create a proto
+                persona based on stakeholder insights and my online research.
+                This was the most practical choice considering budget and time
+                constraints and ensuring alignment on user needs throughout the
+                project.
+              </p>
             </div>
-            <div class="columns is-variable">
-                <div class="column is-half">
-                    <figure class="image is-16by9">
-                        <img src="images/CS PP Research 03.jpg" alt="User protopersona for product">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure class="image is-16by9">
-                        <img src="images/CS PP Research 02.jpg" alt="Sample of user research">
-                    </figure>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="columns is-variable">
+          <div class="column is-half">
+            <figure class="image is-16by9">
+              <img
+                src="images/PP_Research_03.jpg"
+                alt="User protopersona for product"
+              />
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image is-16by9">
+              <img
+                src="images/PP_Research_02.jpg"
+                alt="Sample of user research"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section pb-0">
-        <div class="container is-max-widescreen">
-            <div class="columns is-variable is-6 level">
-                <div class="column is-6">
-                    <div class="content">
-                        <h3 class="is-size-2 is-size-3-mobile block">Technical AI Review
-                        </h3>
-                        <p class="block">I conducted general research on the functioning of GPT-4 as a Large Language
-                            Model (LLM) during that period. This continued to be a learning process throughout the
-                            project.
-                        </p>
-                        <p>Our team maintained ongoing communication, especially during prompt testing by
-                            developers. This ensured I stayed informed about encountered issues and their potential
-                            impact on user experience design.
-                        </p>
-                    </div>
-                </div>
-                <div class="column pb-0">
-                    <figure class="image">
-                        <img src="images/CS PP Research 04.jpg" alt="Screenshot of researching OpenAI">
-                    </figure>
-                </div>
+      <div class="container is-max-widescreen">
+        <div class="columns is-variable is-6 level">
+          <div class="column is-6">
+            <div class="content">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Technical AI Review
+              </h3>
+              <p class="block">
+                I conducted general research on the functioning of GPT-4 as a
+                Large Language Model (LLM) during that period. This continued to
+                be a learning process throughout the project.
+              </p>
+              <p>
+                Our team maintained ongoing communication, especially during
+                prompt testing by developers. This ensured I stayed informed
+                about encountered issues and their potential impact on user
+                experience design.
+              </p>
             </div>
-            <div class="hr-line"></div>
+          </div>
+          <div class="column pb-0">
+            <figure class="image">
+              <img
+                src="images/PP_Research_04.jpg"
+                alt="Screenshot of researching OpenAI"
+              />
+            </figure>
+          </div>
         </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
     <section class="section py-0">
-        <div class="container is-max-widescreen">
-            <div class="columns is-centered">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="card py-6">
+              <div class="columns">
+                <div class="column is-1"></div>
                 <div class="column">
-                    <div class="card py-6">
-                        <div class="columns">
-                            <div class="column is-1"></div>
-                            <div class="column">
-                                <div class="card-content">
-                                    <h4 class="title is-size-3 is-size-4-mobile">
-                                        How can AI help pastors create sermons?
-                                    </h4>
-                                    <p class="block">While AI is a valuable tool for pastors, it should complement, not replace, the essential elements of sermon creation — human touch, spiritual discernment and personal connection with the congregation.
-                                    </p>
-                                    <p class="block">
-                                        Pastors benefit most when using AI as a supportive tool alongside their own
-                                        insights
-                                        and
-                                        understanding.
-                                    </p>
-                                    <div class="is-size-6 is-size-7-mobile">
-                                        <div class="icon-text pb-2">
-                                            <span class="icon">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="pl-1">Structure & organization</span>
-                                        </div>
-                                        <div class="icon-text pb-2">
-                                            <span class="icon">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="pl-1">Research & content generation</span>
-                                        </div>
-                                        <div class="icon-text pb-2">
-                                            <span class="icon">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="pl-1">Language enhancement</span>
-                                        </div>
-                                        <div class="icon-text">
-                                            <span class="icon">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="pl-1">Time management</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column is-1"></div>
-                        </div>
+                  <div class="card-content">
+                    <h4 class="title is-size-3 is-size-4-mobile">
+                      How can AI help pastors create sermons?
+                    </h4>
+                    <p class="block">
+                      While AI is a valuable tool for pastors, it should
+                      complement, not replace, the essential elements of sermon
+                      creation — human touch, spiritual discernment and personal
+                      connection with the congregation.
+                    </p>
+                    <p class="block">
+                      Pastors benefit most when using AI as a supportive tool
+                      alongside their own insights and understanding.
+                    </p>
+                    <div class="is-size-6 is-size-7-mobile">
+                      <div class="icon-text pb-2">
+                        <span class="icon">
+                          <i class="fas fa-check"></i>
+                        </span>
+                        <span class="pl-1">Structure & organization</span>
+                      </div>
+                      <div class="icon-text pb-2">
+                        <span class="icon">
+                          <i class="fas fa-check"></i>
+                        </span>
+                        <span class="pl-1">Research & content generation</span>
+                      </div>
+                      <div class="icon-text pb-2">
+                        <span class="icon">
+                          <i class="fas fa-check"></i>
+                        </span>
+                        <span class="pl-1">Language enhancement</span>
+                      </div>
+                      <div class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-check"></i>
+                        </span>
+                        <span class="pl-1">Time management</span>
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <div class="column is-1"></div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container  is-max-widescreen">
-            <div class="hr-line"></div>
-        </div>
+      </div>
+      <div class="container is-max-widescreen">
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--ux design ----------------->
+    <!--ux design -->
     <section class="section pt-0 mb-6">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">UX Design</h2>
-            </div>
-            <div class="columns is-variable is-6 level">
-                <div class="column is-6">
-                    <div class="content">
-                        <h3 class="is-size-2 is-size-3-mobile block">Information Architecture and User
-                            Flows
-                        </h3>
-                        <p class="block">The challenge here was creating a logical, user-friendly structure for new
-                            concepts and mental models while aligning with the back-end data structure to ensure easy
-                            information retrieval. I used my user and competitor research along with stakeholder
-                            requirements to inform my design choices which we tested with paper wireframes.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <figure class="image is-16by9">
-                        <img src="images/CS PP Design 01.jpg"
-                            alt="Planning sections of the system and steps involved.">
-                    </figure>
-                </div>
-            </div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">UX Design</h2>
         </div>
+        <div class="columns is-variable is-6 level">
+          <div class="column is-6">
+            <div class="content">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Information Architecture and User Flows
+              </h3>
+              <p class="block">
+                The challenge here was creating a logical, user-friendly
+                structure for new concepts and mental models while aligning with
+                the back-end data structure to ensure easy information
+                retrieval. I used my user and competitor research along with
+                stakeholder requirements to inform my design choices which we
+                tested with paper wireframes.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <figure class="image is-16by9">
+              <img
+                src="images/PP_Design_01.jpg"
+                alt="Planning sections of the system and steps involved."
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section">
-        <div class="container is-max-widescreen">
-            <div class="columns mb-6">
-                <div class="column is-9">
-                    <div class="content">
-                        <h3 class="is-size-2 is-size-3-mobile block">Wireframes and Walkthroughs
-                        </h3>
-                        <p class="block">We iterated through multiple rounds of paper sketches and walkthroughs during
-                            ideation. They provided a lightweight, flexible and cost-effective way to explore and
-                            communicate my design ideas. I also used them to present concepts for user flows and
-                            onboarding.</p>
-                    </div>
-                </div>
+      <div class="container is-max-widescreen">
+        <div class="columns mb-6">
+          <div class="column is-9">
+            <div class="content">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Wireframes and Walkthroughs
+              </h3>
+              <p class="block">
+                We iterated through multiple rounds of paper sketches and
+                walkthroughs during ideation. They provided a lightweight,
+                flexible and cost-effective way to explore and communicate my
+                design ideas. I also used them to present concepts for user
+                flows and onboarding.
+              </p>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <figure class="image">
-                        <img src="images/CS PP Design 02.jpg"
-                            alt="Examples of sketched wireframes and walkthroughs.">
-                    </figure>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <img
+                src="images/PP_Design_02.jpg"
+                alt="Examples of sketched wireframes and walkthroughs."
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section">
-        <div class="container  is-max-widescreen">
-            <div class="columns mb-6">
-                <div class="column is-9-desktop">
-                    <div class="content mt-5">
-                        <h4 class="is-size-3 is-size-4-mobile block">Progressing concepts from sketches to wireframes.
-                        </h4>
-                        <p class="block">I developed multiple iterations of low-fi paper
-                            prototypes which allowed the team to visualize and test functionality and onboarding
-                            process. This helped me easily include feedback
-                            during testing, making it simpler to adapt when necessary.</p>
-                        <p class="block">Aligning language across headings, buttons, and navigation with
-                            industry-specific terminology was attempted. I intentionally kept certain
-                            button labels generic due to the evolving functionality and dev changes during the agile
-                            development.</p>
-                    </div>
-                </div>
+      <div class="container is-max-widescreen">
+        <div class="columns mb-6">
+          <div class="column is-9-desktop">
+            <div class="content mt-5">
+              <h4 class="is-size-3 is-size-4-mobile block">
+                Progressing concepts from sketches to wireframes.
+              </h4>
+              <p class="block">
+                I developed multiple iterations of low-fi paper prototypes which
+                allowed the team to visualize and test functionality and
+                onboarding process. This helped me easily include feedback
+                during testing, making it simpler to adapt when necessary.
+              </p>
+              <p class="block">
+                Aligning language across headings, buttons, and navigation with
+                industry-specific terminology was attempted. I intentionally
+                kept certain button labels generic due to the evolving
+                functionality and dev changes during the agile development.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="container mt-6 is-max-widescreen">
-            <div class="tile is-ancestor">
-                <div class="tile is-vertical">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <div class="tile is-child">
-                                <figure class="image">
-                                    <img src="images/CS PP Design 03.jpg" alt="Sketched wireframe for dashboard">
-                                </figure>
-                            </div>
-                            <div class="tile is-child">
-                                <figure class="image">
-                                    <img src="images/CS PP Design 05.jpg"
-                                        alt="Sketched wireframe for editing content.">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="tile is-child">
-                                <figure class="image">
-                                    <img src="images/CS PP Design 04.jpg"
-                                        alt="Sketched wireframe closeup discussing interaction ideas.">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div class="container mt-6 is-max-widescreen">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile">
+              <div class="tile is-parent is-vertical">
+                <div class="tile is-child">
+                  <figure class="image">
+                    <img
+                      src="images/PP_Design_03.jpg"
+                      alt="Sketched wireframe for dashboard"
+                    />
+                  </figure>
                 </div>
+                <div class="tile is-child">
+                  <figure class="image">
+                    <img
+                      src="images/PP_Design_05.jpg"
+                      alt="Sketched wireframe for editing content."
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child">
+                  <figure class="image">
+                    <img
+                      src="images/PP_Design_04.jpg"
+                      alt="Sketched wireframe closeup discussing interaction ideas."
+                    />
+                  </figure>
+                </div>
+              </div>
             </div>
-            <div class="hr-line"></div>
+          </div>
         </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--ui design ----------------->
+    <!--ui design -->
     <section class="section pt-0">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">UI design</h2>
-            </div>
-            <div class="columns mb-6">
-                <div class="column is-9-desktop">
-                    <div class="content my-5">
-                        <h3 class="is-size-2 is-size-3-mobile block">Adding visual design and making it work as an
-                            interactive prototype
-                        </h3>
-                        <p class="block">To get the MVP out quickly, I couldn't spend much time on the visual design. I
-                            chose a clean and subtle aesthetic, incorporating ample white space to avoid clutter and
-                            allow users to concentrate on their writing. Inspired by the minimalism of platforms like
-                            Grammarly and Google Docs, I aimed for a design that could be implemented quickly while
-                            remaining in line with current UI trends.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-6 mb-6">
-                <div class="tile is-ancestor is-align-items-center">
-                    <div class="tile is-parent">
-                        <div class="tile is-child is-11">
-                            <figure class="image">
-                                <img src="images/CS PP Design UI step 01.jpg"
-                                    alt="Product screenshot for the dashboard grid">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child content">
-                            <h4 class="is-size-3 is-size-4-mobile">1. One central location for crafting and storing your
-                                sermons.
-                            </h4>
-                            <p>Once users sign up for a free or paid plan, they gain access to storage space and tools
-                                for crafting sermon themes, outlines, or complete sermons. The platform ensures easy
-                                creation, editing, seamless sharing, and straightforward exportation of sermon content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-6 mb-6">
-                <div class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse">
-                    <div class="tile is-parent is-vertical">
-                        <div class="tile is-child is-11">
-                            <figure class="image">
-                                <img src="images/CS PP Design UI step 02.jpg"
-                                    alt="Product screenshot for entering sermon description.">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child content is-11">
-                            <h4 class="is-size-3 is-size-4-mobile">2. Provide a short description to get started.</h4>
-                            <p>By entering a brief description of their sermon theme and choosing a theological stance,
-                                the AI will be able to begin shaping the narrative of the sermon.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-6 mb-6">
-                <div class="tile is-ancestor is-align-items-center">
-                    <div class="tile is-parent is-vertical">
-                        <div class="tile is-child is-11">
-                            <figure class="image">
-                                <img src="images/CS PP Design UI step 03.jpg"
-                                    alt="Product screenshot for AI generated overview">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child content">
-                            <h4 class="is-size-3 is-size-4-mobile">3. A theme overview is effortlessly generated.</h4>
-                            <p>The AI-driven approach significantly reduces the time and effort traditionally spent on
-                                brainstorming and refining sermon themes. Pastors can now focus more on the nuanced
-                                aspects of sermon preparation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-6 mb-6">
-                <div class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse">
-                    <div class="tile is-parent is-vertical">
-                        <div class="tile is-child is-11">
-                            <figure class="image">
-                                <img src="images/CS PP Design UI step 04.jpg"
-                                    alt="Product screenshot for editing each section">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child content is-11">
-                            <h4 class="is-size-3 is-size-4-mobile">4. Refine, expand, or edit any section until it's
-                                just right.
-                            </h4>
-                            <p>This adaptability ensures each sermon is finely tuned to convey the intended message,
-                                connect with the congregation, and address diverse aspects of worship and community
-                                life.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-6">
-                <div class="tile is-ancestor is-align-items-center">
-                    <div class="tile is-parent is-vertical">
-                        <div class="tile is-child is-11">
-                            <figure class="image">
-                                <img src="images/CS PP Design UI step 05.jpg"
-                                    alt="Product screenshot for sermon summary page">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child content">
-                            <h4 class="is-size-3 is-size-4-mobile">5. Start for free and upgrade for advanced add-ons.
-                            </h4>
-                            <p>Sermon creation is divided into parts and pastors can later upgrade to access additional
-                                features, such as song recommendations, and much more.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hr-line"></div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">UI design</h2>
         </div>
+        <div class="columns mb-6">
+          <div class="column is-9-desktop">
+            <div class="content my-5">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Adding visual design and making it work as an interactive
+                prototype
+              </h3>
+              <p class="block">
+                To get the MVP out quickly, I couldn't spend much time on the
+                visual design. I chose a clean and subtle aesthetic,
+                incorporating ample white space to avoid clutter and allow users
+                to concentrate on their writing. Inspired by the minimalism of
+                platforms like Grammarly and Google Docs, I aimed for a design
+                that could be implemented quickly while remaining in line with
+                current UI trends.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container py-6 mb-6">
+          <div class="tile is-ancestor is-align-items-center">
+            <div class="tile is-parent">
+              <div class="tile is-child is-11">
+                <figure class="image">
+                  <img
+                    src="images/PP_Design_UI_step_01.jpg"
+                    alt="Product screenshot for the dashboard grid"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child content">
+                <h4 class="is-size-3 is-size-4-mobile">
+                  1. One central location for crafting and storing your sermons.
+                </h4>
+                <p>
+                  Once users sign up for a free or paid plan, they gain access
+                  to storage space and tools for crafting sermon themes,
+                  outlines, or complete sermons. The platform ensures easy
+                  creation, editing, seamless sharing, and straightforward
+                  exportation of sermon content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-6 mb-6">
+          <div
+            class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse"
+          >
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child is-11">
+                <figure class="image">
+                  <img
+                    src="images/PP_Design_UI_step_02.jpg"
+                    alt="Product screenshot for entering sermon description."
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child content is-11">
+                <h4 class="is-size-3 is-size-4-mobile">
+                  2. Provide a short description to get started.
+                </h4>
+                <p>
+                  By entering a brief description of their sermon theme and
+                  choosing a theological stance, the AI will be able to begin
+                  shaping the narrative of the sermon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-6 mb-6">
+          <div class="tile is-ancestor is-align-items-center">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child is-11">
+                <figure class="image">
+                  <img
+                    src="images/PP_Design_UI_step_03.jpg"
+                    alt="Product screenshot for AI generated overview"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child content">
+                <h4 class="is-size-3 is-size-4-mobile">
+                  3. A theme overview is effortlessly generated.
+                </h4>
+                <p>
+                  The AI-driven approach significantly reduces the time and
+                  effort traditionally spent on brainstorming and refining
+                  sermon themes. Pastors can now focus more on the nuanced
+                  aspects of sermon preparation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-6 mb-6">
+          <div
+            class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse"
+          >
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child is-11">
+                <figure class="image">
+                  <img
+                    src="images/PP_Design_UI_step_04.jpg"
+                    alt="Product screenshot for editing each section"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child content is-11">
+                <h4 class="is-size-3 is-size-4-mobile">
+                  4. Refine, expand, or edit any section until it's just right.
+                </h4>
+                <p>
+                  This adaptability ensures each sermon is finely tuned to
+                  convey the intended message, connect with the congregation,
+                  and address diverse aspects of worship and community life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-6">
+          <div class="tile is-ancestor is-align-items-center">
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child is-11">
+                <figure class="image">
+                  <img
+                    src="images/PP_Design_UI_step_05.jpg"
+                    alt="Product screenshot for sermon summary page"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <div class="tile is-child content">
+                <h4 class="is-size-3 is-size-4-mobile">
+                  5. Start for free and upgrade for advanced add-ons.
+                </h4>
+                <p>
+                  Sermon creation is divided into parts and pastors can later
+                  upgrade to access additional features, such as song
+                  recommendations, and much more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr-line"></div>
+      </div>
     </section>
 
-    <!--conclusion ----------------->
+    <!--conclusion -->
     <section class="section pt-0 mb-6">
-        <div class="container is-max-widescreen">
-            <div class="my-section-headings">
-                <h2 class="hr-lines has-text-weight-bold">TAKEAWAY</h2>
-            </div>
-            <div class="columns mb-6">
-                <div class="column is-12-desktop">
-                    <div class="content mt-5">
-                        <h3 class="is-size-2 is-size-3-mobile block">Adapting to AI and navigating novelty
-                        </h3>
-                        <p class="block">A key challenge in this project was dealing with the newness of AI technology
-                            in early 2023. Navigating unexplored territory brought unique obstacles, demanding
-                            adaptability and creativity in designing user-friendly interfaces and workflows. Valuable
-                            lessons highlighted the importance of collaboration in cross-functional teams when dealing
-                            with emerging technologies.</p>
-                        <p class="block">This project has changed my outlook as a designer, underscoring the importance
-                            of flexibility and adaptability when working with new technologies. It
-                            also highlighted the necessity of a deep domain knowledge and the complexities surrounding
-                            carefully crafted prompts in order to deliver the best results using AI.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container is-max-widescreen">
+        <div class="my-section-headings">
+          <h2 class="hr-lines has-text-weight-bold">TAKEAWAY</h2>
         </div>
+        <div class="columns mb-6">
+          <div class="column is-12-desktop">
+            <div class="content mt-5">
+              <h3 class="is-size-2 is-size-3-mobile block">
+                Adapting to AI and navigating novelty
+              </h3>
+              <p class="block">
+                A key challenge in this project was dealing with the newness of
+                AI technology in early 2023. Navigating unexplored territory
+                brought unique obstacles, demanding adaptability and creativity
+                in designing user-friendly interfaces and workflows. Valuable
+                lessons highlighted the importance of collaboration in
+                cross-functional teams when dealing with emerging technologies.
+              </p>
+              <p class="block">
+                This project has changed my outlook as a designer, underscoring
+                the importance of flexibility and adaptability when working with
+                new technologies. It also highlighted the necessity of a deep
+                domain knowledge and the complexities surrounding carefully
+                crafted prompts in order to deliver the best results using AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--footer--------------------------------------------------->
+    <!--footer-->
     <footer class="footer is-max-fullhd has-text-centered-mobile">
-        <div id="contact" class="jump-to-section"></div>
-        <div class="container mb-6 px-0">
-            <h5 class="title is-3 is-size-4-mobile">
-                <a href="mailto:design@nadabonaso.com" target="_top">design@nadabonaso.com</a>
-            </h5>
-            <div>
-                <a class="pr-4" href="https://www.linkedin.com/in/nadabonaso/" target="_blank">
-                    <span class=" is-underlined">LinkedIn</span>
-                </a>
-                <a class="pr-4" href="https://github.com/nadabonaso" target="_blank">
-                    <span class=" is-underlined">GitHub</span>
-                </a>
-                <a class="pr-4" href="Nada-Bonaso-UX-Resume.pdf" target="_blank">
-                    <span class=" is-underlined">Resume</span>
-                </a>
-            </div>
+      <div id="contact" class="jump-to-section"></div>
+      <div class="container mb-6 px-0">
+        <h5 class="title is-3 is-size-4-mobile">
+          <a href="mailto:design@nadabonaso.com" target="_top"
+            >design@nadabonaso.com</a
+          >
+        </h5>
+        <div>
+          <a
+            class="pr-4"
+            href="https://www.linkedin.com/in/nadabonaso/"
+            target="_blank"
+          >
+            <span class="is-underlined">LinkedIn</span>
+          </a>
+          <a class="pr-4" href="https://github.com/nadabonaso" target="_blank">
+            <span class="is-underlined">GitHub</span>
+          </a>
+          <a class="pr-4" href="Nada-Bonaso-UX-Resume.pdf" target="_blank">
+            <span class="is-underlined">Resume</span>
+          </a>
         </div>
-        <div class="container px-0">
-            <div class="columns level">
-                <div class="column has-text-centered-mobile">
-                    <div class="">
-                        <p>Copyright © 2024 Nada Bonaso.</p>
-                    </div>
-                </div>
-                <div class="column has-text-right has-text-centered-mobile">
-                    <div class="footer-links">
-                        <a class="back-top" href="#top" aria-label="Back to top of page"><i class="fa-solid fa-arrow-up"></i></a>
-                    </div>
-                </div>
+      </div>
+      <div class="container px-0">
+        <div class="columns level">
+          <div class="column has-text-centered-mobile">
+            <div class="">
+              <p>Copyright © 2024 Nada Bonaso.</p>
             </div>
+          </div>
+          <div class="column has-text-right has-text-centered-mobile">
+            <div class="footer-links">
+              <a class="back-top" href="#top" aria-label="Back to top of page"
+                ><i class="fa-solid fa-arrow-up"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- javascript includes -->
     <script src="js/myscripts.js"></script>
-    <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/01fea1895b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
