@@ -21,7 +21,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Nada Bonaso</title>
+    <title>Contact &mdash; Nada Bonaso</title>
     <meta name="description" content="Contact" />
     <link
       rel="icon"
@@ -52,75 +52,71 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="styles/mystyles.css" />
+    <!-- javascript includes -->
+    <script src="js/myscripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01fea1895b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!--nav bar-->
-    <nav class="navbar is-transparent" aria-label="main navigation">
-      <div class="container is-max-fullhd">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="images/favicon_io_white/apple-touch-icon.png"
-              alt="Nada Bonaso logo"
-            />&nbsp;nada bonaso
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="index.html#work" target="_self">
-              Projects
+    <header>
+      <nav class="navbar is-transparent" aria-label="main navigation">
+        <div class="container is-max-fullhd">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="images/favicon_io_white/apple-touch-icon.png"
+                alt="Nada Bonaso logo"
+              />&nbsp;nada bonaso
             </a>
-            <a class="navbar-item is-active" href="about.html" target="_self">
-              About
-            </a>
-            <a class="navbar-item" href="contact.html" target="_self">
-              Contact
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="index.html#work" target="_self">
+                Projects
+              </a>
+              <a class="navbar-item is-active" href="about.html" target="_self">
+                About
+              </a>
+              <a class="navbar-item" href="contact.html" target="_self">
+                Contact
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <!--hero-->
-    <section class="section is-hidden-mobile is-max-fullhd pb-0">
-      <div class="container">
-        <h1 class="title xl-heading">Get in touch.</h1>
-      </div>
-    </section>
-
-    <section class="section is-hidden-tablet is-max-fullhd pb-0">
-      <div class="container">
-        <h1 class="title is-1">Get in touch.</h1>
-      </div>
-    </section>
+      </nav>
+    </header>
 
     <!--main content-->
     <section class="section mb-6">
       <div class="container is-max-widescreen">
+        <h1 class="title xl-heading is-hidden-touch">Get in touch.</h1>
+        <h1 class="title is-1 is-hidden-desktop">Get in touch.</h1>
         <div class="columns">
-          <div class="column is-10-widescreen is-flex is-flex-direction-column">
-            <h2 class="title is-4">Let's work together.</h2>
-            <p class="block mb-6">
-              I'm available to collaborate remotely on freelance projects or
-              part-time contracts worldwide.
+          <div class="column is-8-widescreen is-flex is-flex-direction-column">
+            <p class="block mb-6 mt-4">
+              Let's work together &mdash; I'm available to collaborate remotely
+              on freelance projects or part-time contracts worldwide.
             </p>
 
             <!--form-->
             <form
               id="contact-form"
-              class=""
+              class="is-flex is-flex-direction-column"
               action="https://formsubmit.co/80380174f153d7253a883e75e8c71980"
               method="POST"
             >
@@ -199,7 +195,7 @@
     </section>
 
     <!--footer-->
-    <footer class="footer is-max-fullhd has-text-centered-mobile">
+    <footer class="footer is-max-fullhd has-text-centered-mobile mt-6">
       <div id="contact" class="jump-to-section"></div>
       <div class="container mb-6 px-0">
         <h5 class="title is-3 is-size-4-mobile">
@@ -240,11 +236,5 @@
         </div>
       </div>
     </footer>
-    <!-- javascript includes -->
-    <script src="js/myscripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/01fea1895b.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

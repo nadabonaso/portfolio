@@ -58,51 +58,61 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="styles/mystyles.css" />
+    <!-- javascript includes -->
+    <script src="js/myscripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01fea1895b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!--nav bar-->
-    <nav class="navbar is-transparent mb-4" aria-label="main navigation">
-      <div class="container is-max-fullhd">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="images/favicon_io_black/apple-touch-icon.png"
-              alt="Nada Bonaso logo"
-            />&nbsp;nada bonaso
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a
-              class="navbar-item is-active"
-              href="index.html#work"
-              target="_self"
-            >
-              Projects
+    <header>
+      <nav class="navbar is-transparent mb-4" aria-label="main navigation">
+        <div class="container is-max-fullhd">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="images/favicon_io_black/apple-touch-icon.png"
+                alt="Nada Bonaso logo"
+              />&nbsp;nada bonaso
             </a>
-            <a class="navbar-item" href="about.html" target="_self"> About </a>
-            <a class="navbar-item" href="contact.html" target="_self">
-              Contact
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a
+                class="navbar-item is-active"
+                href="index.html#work"
+                target="_self"
+              >
+                Projects
+              </a>
+              <a class="navbar-item" href="about.html" target="_self">
+                About
+              </a>
+              <a class="navbar-item" href="contact.html" target="_self">
+                Contact
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!--hero-->
-    <section class="hero">
+    <div class="hero">
       <div class="hero-head">
         <div class="container is-max-fullhd">
           <figure class="image">
@@ -113,7 +123,7 @@
           </figure>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--overview-->
     <section class="section pb-0">
@@ -123,7 +133,7 @@
             <h1 class="title is-1 is-size-2-mobile">
               UX Design for an AI-Powered SaaS Speech Writing Tool
             </h1>
-            <p class="subtitle is-6 has-text-grey pt-2">UX UI DESIGN</p>
+            <p class="subtitle is-6 has-text-grey mt-1">UX UI DESIGN</p>
           </div>
           <!-- nav arrows -->
           <div class="column">
@@ -156,14 +166,14 @@
       <div class="container is-max-fullhd">
         <div class="columns is-flex-tablet">
           <div class="column is-4">
-            <h3 class="has-text-weight-bold">Role</h3>
+            <p class="has-text-weight-bold">Role</p>
             <p class="block">UX UI Designer</p>
-            <h3 class="has-text-weight-bold">Team</h3>
+            <p class="has-text-weight-bold">Team</p>
             <p class="block">Product Owner, Engineers, UX Designer</p>
-            <h3 class="has-text-weight-bold">Duration</h3>
+            <p class="has-text-weight-bold">Duration</p>
             <p>4 months</p>
           </div>
-          <div class="column pb-0">
+          <div class="column">
             <p class="block">
               My client noticed that pastors could use a little help crafting
               their sermons. With substantial workloads, pastors invest
@@ -182,12 +192,12 @@
             </p>
           </div>
         </div>
-        <div class="hr-line"></div>
+        <hr class="hr-line is-max-widescreen" />
       </div>
     </section>
 
     <!--problem -->
-    <section class="section py-0">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">Problem</h2>
@@ -231,12 +241,14 @@
             </p>
           </div>
         </div>
-        <div class="hr-line"></div>
       </div>
     </section>
 
+    <!-- custom hr -->
+    <div class="container is-max-widescreen"><hr class="hr-line" /></div>
+
     <!--solution -->
-    <section class="section pb-0">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">SOLUTION</h2>
@@ -266,12 +278,14 @@
             </div>
           </div>
         </div>
-        <div class="hr-line"></div>
       </div>
     </section>
 
+    <!-- custom hr -->
+    <div class="container is-max-widescreen"><hr class="hr-line" /></div>
+
     <!--research -->
-    <section class="section pt-0 mb-6">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">UX Reseach</h2>
@@ -304,9 +318,9 @@
         </div>
       </div>
     </section>
-    <section class="section mb-6">
+    <section class="section">
       <div class="container is-max-widescreen">
-        <div class="columns mb-6">
+        <div class="columns mb-5">
           <div class="column is-9-desktop">
             <div class="content mt-5">
               <h3 class="is-size-2 is-size-3-mobile block">
@@ -348,7 +362,7 @@
         </div>
       </div>
     </section>
-    <section class="section pb-0">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="columns is-variable is-6 level">
           <div class="column is-6">
@@ -369,7 +383,7 @@
               </p>
             </div>
           </div>
-          <div class="column pb-0">
+          <div class="column">
             <figure class="image">
               <img
                 src="images/PP_Research_04.jpg"
@@ -378,10 +392,15 @@
             </figure>
           </div>
         </div>
-        <div class="hr-line"></div>
       </div>
     </section>
-    <section class="section py-0">
+
+    <!-- custom hr -->
+    <div class="container is-max-widescreen">
+      <hr class="hr-line" />
+    </div>
+
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="columns is-centered">
           <div class="column">
@@ -437,13 +456,13 @@
           </div>
         </div>
       </div>
-      <div class="container is-max-widescreen">
-        <div class="hr-line"></div>
-      </div>
     </section>
 
+    <!-- custom hr -->
+    <div class="container is-max-widescreen"><hr class="hr-line" /></div>
+
     <!--ux design -->
-    <section class="section pt-0 mb-6">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">UX Design</h2>
@@ -477,7 +496,7 @@
     </section>
     <section class="section">
       <div class="container is-max-widescreen">
-        <div class="columns mb-6">
+        <div class="columns mb-5">
           <div class="column is-9">
             <div class="content">
               <h3 class="is-size-2 is-size-3-mobile block">
@@ -529,7 +548,7 @@
           </div>
         </div>
       </div>
-      <div class="container mt-6 is-max-widescreen">
+      <div class="container mt-5 is-max-widescreen">
         <div class="tile is-ancestor">
           <div class="tile is-vertical">
             <div class="tile">
@@ -564,17 +583,19 @@
             </div>
           </div>
         </div>
-        <div class="hr-line"></div>
       </div>
     </section>
 
+    <!-- custom hr -->
+    <div class="container is-max-widescreen"><hr class="hr-line" /></div>
+
     <!--ui design -->
-    <section class="section pt-0">
+    <section class="section">
       <div class="container is-max-widescreen">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">UI design</h2>
         </div>
-        <div class="columns mb-6">
+        <div class="columns mb-5">
           <div class="column is-9-desktop">
             <div class="content my-5">
               <h3 class="is-size-2 is-size-3-mobile block">
@@ -593,7 +614,7 @@
             </div>
           </div>
         </div>
-        <div class="container py-6 mb-6">
+        <div class="container py-6 mb-5">
           <div class="tile is-ancestor is-align-items-center">
             <div class="tile is-parent">
               <div class="tile is-child is-11">
@@ -621,7 +642,7 @@
             </div>
           </div>
         </div>
-        <div class="container py-6 mb-6">
+        <div class="container py-6 mb-5">
           <div
             class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse"
           >
@@ -649,7 +670,7 @@
             </div>
           </div>
         </div>
-        <div class="container py-6 mb-6">
+        <div class="container py-6 mb-5">
           <div class="tile is-ancestor is-align-items-center">
             <div class="tile is-parent is-vertical">
               <div class="tile is-child is-11">
@@ -676,7 +697,7 @@
             </div>
           </div>
         </div>
-        <div class="container py-6 mb-6">
+        <div class="container py-6 mb-5">
           <div
             class="tile is-ancestor is-align-items-center is-flex-direction-row-reverse"
           >
@@ -704,7 +725,7 @@
             </div>
           </div>
         </div>
-        <div class="container py-6">
+        <div class="container pt-6">
           <div class="tile is-ancestor is-align-items-center">
             <div class="tile is-parent is-vertical">
               <div class="tile is-child is-11">
@@ -730,17 +751,19 @@
             </div>
           </div>
         </div>
-        <div class="hr-line"></div>
       </div>
     </section>
 
+    <!-- custom hr -->
+    <div class="container is-max-widescreen"><hr class="hr-line" /></div>
+
     <!--conclusion -->
-    <section class="section pt-0 mb-6">
-      <div class="container is-max-widescreen">
+    <section class="section">
+      <div class="container is-max-widescreen mb-6">
         <div class="my-section-headings">
           <h2 class="hr-lines has-text-weight-bold">TAKEAWAY</h2>
         </div>
-        <div class="columns mb-6">
+        <div class="columns">
           <div class="column is-12-desktop">
             <div class="content mt-5">
               <h3 class="is-size-2 is-size-3-mobile block">
@@ -768,7 +791,7 @@
     </section>
 
     <!--footer-->
-    <footer class="footer is-max-fullhd has-text-centered-mobile">
+    <footer class="footer is-max-fullhd has-text-centered-mobile mt-6">
       <div id="contact" class="jump-to-section"></div>
       <div class="container mb-6 px-0">
         <h5 class="title is-3 is-size-4-mobile">
@@ -809,12 +832,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- javascript includes -->
-    <script src="js/myscripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/01fea1895b.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9VM2F4C0SR"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-9VM2F4C0SR");
-    </script>
-    <!-- page details -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404</title>
+    <title>404 &mdash; Nada Bonaso</title>
     <meta name="description" content="Page does not exist." />
     <link
       rel="icon"
       type="image/x-icon"
       href="images/favicon_io_black/favicon.ico"
     />
-    <!-- open graph tags -->
-    <meta property="og:site_name" content="Nada Bonaso" />
-    <meta property="og:title" content="404" />
-    <meta property="og:description" content="Page does not exist." />
-    <meta property="og:url" content="https://www.nadabonaso.com" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://nadabonaso.github.io/portfolio/images/nb-design@2x.png"
-    />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="314" />
-    <!-- stylesheets -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="styles/mystyles.css" />
+    <script src="js/myscripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01fea1895b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!--nav bar-->
-    <nav class="navbar is-transparent" aria-label="main navigation">
-      <div class="container is-max-fullhd">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="images/favicon_io_white/apple-touch-icon.png"
-              alt="Nada Bonaso logo"
-            />&nbsp;nada bonaso
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="index.html#work" target="_self">
-              Projects
+    <header>
+      <nav class="navbar is-transparent" aria-label="main navigation">
+        <div class="container is-max-fullhd">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="images/favicon_io_white/apple-touch-icon.png"
+                alt="Nada Bonaso logo"
+              />&nbsp;nada bonaso
             </a>
-            <a class="navbar-item" href="about.html" target="_self"> About </a>
-            <a class="navbar-item" href="contact.html" target="_self">
-              Contact
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="index.html#work" target="_self">
+                Projects
+              </a>
+              <a class="navbar-item" href="about.html" target="_self">
+                About
+              </a>
+              <a class="navbar-item" href="contact.html" target="_self">
+                Contact
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!--main content-->
     <section class="section mb-6">
@@ -96,12 +72,10 @@
             <div
               class="container is-flex is-flex-direction-column is-align-items-center"
             >
-              <h2 class="title" style="font-size: 8rem">404</h2>
-              <h1 class="subtitle">Sorry, this page does not exist.</h1>
-              <a href="index.html" target="_self"
-                ><button class="button is-black mt-4">
-                  Back to homepage
-                </button></a
+              <h1 class="title" style="font-size: 8rem">404</h1>
+              <h2 class="subtitle">Sorry, this page does not exist.</h2>
+              <a class="button is-black mt-4" href="index.html" target="_self">
+                Back to homepage</a
               >
             </div>
           </div>
@@ -110,7 +84,7 @@
     </section>
 
     <!--footer-->
-    <footer class="footer is-max-fullhd has-text-centered-mobile">
+    <footer class="footer is-max-fullhd has-text-centered-mobile mt-6">
       <div id="contact" class="jump-to-section"></div>
       <div class="container mb-6 px-0">
         <h5 class="title is-3 is-size-4-mobile">
@@ -154,11 +128,5 @@
         </div>
       </div>
     </footer>
-    <!-- javascript includes -->
-    <script src="js/myscripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/01fea1895b.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

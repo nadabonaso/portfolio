@@ -52,46 +52,54 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="styles/mystyles.css" />
+    <!-- javascript includes -->
+    <script src="js/myscripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01fea1895b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!--nav bar-->
-    <nav class="navbar is-transparent" aria-label="main navigation">
-      <div class="container is-max-fullhd">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="images/favicon_io_white/apple-touch-icon.png"
-              alt="Nada Bonaso logo"
-            />&nbsp;nada bonaso
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="index.html" target="_self">
-              Projects
+    <header>
+      <nav class="navbar is-transparent" aria-label="main navigation">
+        <div class="container is-max-fullhd">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img
+                src="images/favicon_io_white/apple-touch-icon.png"
+                alt="Nada Bonaso logo"
+              />&nbsp;nada bonaso
             </a>
-            <a class="navbar-item is-active" href="about.html" target="_self">
-              About
-            </a>
-            <a class="navbar-item" href="contact.html" target="_self">
-              Contact
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="index.html" target="_self">
+                Projects
+              </a>
+              <a class="navbar-item is-active" href="about.html" target="_self">
+                About
+              </a>
+              <a class="navbar-item" href="contact.html" target="_self">
+                Contact
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!--hero-->
     <section class="section is-hidden-mobile is-max-fullhd pb-0">
@@ -305,7 +313,7 @@
                   >
                 </div>
               </div>
-              <div class="content mb-6">
+              <div class="content">
                 <h5 class="subtitle">Tools</h5>
                 <div class="tags is-titlecase are-medium">
                   <span
@@ -390,12 +398,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- javascript includes -->
-    <script src="js/myscripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/01fea1895b.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
