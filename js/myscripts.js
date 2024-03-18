@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Slider tesimonials
 let index = 0;
 // document.getElementById("restart").setAttribute("disabled", "");
-show_testimonial(index);
 
 function show_testimonial(i) {
   index += i;
@@ -47,6 +46,8 @@ function show_testimonial(i) {
   testimonials[index].style.display = "block";
   dots[index].className += " active";
 }
+
+show_testimonial(index);
 
 // let myInterval = setInterval(startAni, 10000);
 
