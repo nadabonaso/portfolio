@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="styles/styles.min.css" />
   </head>
-
   <body>
     <!--nav bar-->
     <header>
@@ -57,7 +56,6 @@
         </div>
       </nav>
     </header>
-
     <!--main content-->
     <section class="section mb-6">
       <div class="container is-max-widescreen">
@@ -66,9 +64,12 @@
         <div class="columns">
           <div class="column is-8-widescreen is-flex is-flex-direction-column">
             <p class="block mb-6 mt-4">Let's work together &mdash; I'm available to collaborate remotely on freelance projects or part-time contracts worldwide.</p>
-
-            <!-- NETFLIFY FORM -->
-            <form id="contact-form" class="is-flex is-flex-direction-column" name="contact" action="/success.html" method="POST" data-netlify="true">
+            <!--form-->
+            <form id="contact-form" class="is-flex is-flex-direction-column" action="https://formsubmit.co/80380174f153d7253a883e75e8c71980" method="POST">
+              <input type="hidden" name="_next" value="https://nadabonaso.com/success.html" />
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New website query" />
               <div class="field">
                 <label for="name" class="label">Name</label>
                 <p class="control is-expanded has-icons-left">
@@ -104,7 +105,6 @@
         </div>
       </div>
     </section>
-
     <!--footer-->
     <footer class="footer is-max-fullhd has-text-centered-mobile mt-6">
       <div id="contact" class="jump-to-section"></div>
