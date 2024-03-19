@@ -68,7 +68,10 @@
             <p class="block mb-6 mt-4">Let's work together &mdash; I'm available to collaborate remotely on freelance projects or part-time contracts worldwide.</p>
 
             <!-- NETFLIFY FORM -->
-            <form id="contact-form" class="is-flex is-flex-direction-column" name="contact" action="/success.html" data-netlify="true">
+            <form id="Contact" class="is-flex is-flex-direction-column" name="contact" action="/success.html" netlify-honeypot="bot-field" data-netlify="true">
+              <p class="hidden">
+                <label> Don’t fill this out if you’re human: <input name="bot-field" /> </label>
+              </p>
               <div class="field">
                 <label for="name" class="label">Name</label>
                 <p class="control is-expanded has-icons-left">
