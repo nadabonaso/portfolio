@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Set current year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
 // Slider tesimonials
 let index = 0;
 // document.getElementById("restart").setAttribute("disabled", "");
@@ -63,8 +68,3 @@ show_testimonial(index);
 // function reStartAni() {
 //   location.reload();
 // }
-
-// Set current year
-const yearEl = document.querySelector('.year');
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
