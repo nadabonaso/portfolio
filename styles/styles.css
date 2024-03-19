@@ -63,6 +63,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -92,6 +93,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -304,9 +306,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 article,
@@ -7603,7 +7603,6 @@ label.panel-block:hover {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  min-height: -moz-min-content;
   min-height: min-content;
 }
 .tile.is-ancestor {
@@ -10414,7 +10413,6 @@ footer .back-top {
 #next:active {
   cursor: pointer;
   color: #212121;
-  width: -moz-fit-content;
   width: fit-content;
   transition: all 0.2s ease;
 }
@@ -10459,4 +10457,4 @@ footer .back-top {
   to {
     opacity: 1;
   }
-}/*# sourceMappingURL=mystyles.css.map */
+}

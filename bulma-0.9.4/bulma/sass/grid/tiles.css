@@ -4,7 +4,6 @@
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  min-height: -moz-min-content;
   min-height: min-content;
 }
 .tile.is-ancestor {
@@ -82,4 +81,4 @@
     flex: none;
     width: 100%;
   }
-}/*# sourceMappingURL=tiles.css.map */
+}

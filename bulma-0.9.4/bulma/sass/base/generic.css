@@ -7,9 +7,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 article,
@@ -128,4 +126,4 @@ table th:not([align]) {
 }
 table th {
   color: hsl(0, 0%, 21%);
-}/*# sourceMappingURL=generic.css.map */
+}
