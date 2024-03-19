@@ -1,21 +1,18 @@
 // Navbar menu
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-burger"),
-    0
-  );
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
   // Add a click event on each of them
   $navbarBurgers.forEach((el) => {
-    el.addEventListener("click", () => {
+    el.addEventListener('click', () => {
       // Get the target from the "data-target" attribute
       const target = el.dataset.target;
       const $target = document.getElementById(target);
 
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      el.classList.toggle("is-active");
-      $target.classList.toggle("is-active");
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
     });
   });
 });
@@ -27,24 +24,24 @@ let index = 0;
 function show_testimonial(i) {
   index += i;
 
-  let testimonials = document.getElementsByClassName("testimonial");
+  let testimonials = document.getElementsByClassName('testimonial');
 
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName('dot');
 
   for (i = 0; i < testimonials.length; i++) {
-    testimonials[i].style.display = "none";
+    testimonials[i].style.display = 'none';
   }
 
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(' active', '');
   }
 
   if (index > testimonials.length - 1) index = 0;
 
   if (index < 0) index = testimonials.length - 1;
 
-  testimonials[index].style.display = "block";
-  dots[index].className += " active";
+  testimonials[index].style.display = 'block';
+  dots[index].className += ' active';
 }
 
 show_testimonial(index);
@@ -66,3 +63,8 @@ show_testimonial(index);
 // function reStartAni() {
 //   location.reload();
 // }
+
+// Set current year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
