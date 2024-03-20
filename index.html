@@ -295,8 +295,8 @@
       <div class="container px-0">
         <div class="columns level">
           <div class="column has-text-centered-mobile">
-            <div class="">
-              <p>Copyright © 2024 Nada Bonaso.</p>
+            <div class="copyright">
+              <p>Copyright &copy; <span class="year">2028</span> Nada Bonaso.</p>
             </div>
           </div>
           <div class="column has-text-right has-text-centered-mobile">
@@ -308,7 +308,36 @@
       </div>
     </footer>
     <!-- javascript includes -->
-    <script src="js/myscripts.js"></script>
-    <script src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
+    <script>
+      // Slider tesimonials
+      let index = 0;
+
+      function show_testimonial(i) {
+        index += i;
+
+        let testimonials = document.getElementsByClassName('testimonial');
+
+        let dots = document.getElementsByClassName('dot');
+
+        for (i = 0; i < testimonials.length; i++) {
+          testimonials[i].style.display = 'none';
+        }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+
+        if (index > testimonials.length - 1) index = 0;
+
+        if (index < 0) index = testimonials.length - 1;
+
+        testimonials[index].style.display = 'block';
+        dots[index].className += ' active';
+      }
+
+      show_testimonial(index);
+    </script>
+    <script defer src="js/myscripts.js"></script>
+    <script defer src="https://kit.fontawesome.com/01fea1895b.js" crossorigin="anonymous"></script>
   </body>
 </html>

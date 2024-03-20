@@ -1,3 +1,5 @@
+'use strict';
+
 // Navbar menu
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
@@ -17,34 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Slider tesimonials
-let index = 0;
+// SLIDER Animation
 // document.getElementById("restart").setAttribute("disabled", "");
 
-function show_testimonial(i) {
-  index += i;
-
-  let testimonials = document.getElementsByClassName('testimonial');
-
-  let dots = document.getElementsByClassName('dot');
-
-  for (i = 0; i < testimonials.length; i++) {
-    testimonials[i].style.display = 'none';
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
-  }
-
-  if (index > testimonials.length - 1) index = 0;
-
-  if (index < 0) index = testimonials.length - 1;
-
-  testimonials[index].style.display = 'block';
-  dots[index].className += ' active';
-}
-
-show_testimonial(index);
+// Code from index goes here
 
 // let myInterval = setInterval(startAni, 10000);
 
@@ -68,3 +46,4 @@ show_testimonial(index);
 const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+// console.log(currentYear);
