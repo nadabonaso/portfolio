@@ -25,6 +25,11 @@ $card-content-padding: 2rem;
 @import '../bulma-0.9.4/bulma/bulma.sass';
 
 // My Custom CSS
+*::selection {
+  background: $black;
+  color: $white;
+}
+
 .my-section-headings {
   text-transform: uppercase;
   position: left;
@@ -107,13 +112,13 @@ footer .back-top {
 
 .xl-heading {
   font-size: 5rem;
-  line-height: 4.6rem;
+  line-height: 5rem;
 }
 
 @media (max-width: 1216px) {
   .xl-heading {
     font-size: 4rem;
-    line-height: 3.6rem;
+    line-height: 4rem;
   }
 }
 
