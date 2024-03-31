@@ -10454,6 +10454,11 @@ footer .back-top {
   animation-duration: 1s;
 }
 
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 1.8rem;
+}
+
 @keyframes fade {
   from {
     opacity: 0.1;
