@@ -48,13 +48,17 @@
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
+              <a class="navbar-item" href="index.html" target="_self"> Home </a>
               <a class="navbar-item" href="index.html#work" target="_self"> Projects </a>
-              <a class="navbar-item is-active" href="about.html" target="_self"> About </a>
-              <a class="navbar-item" href="contact.html" target="_self"> Contact </a>
+              <a class="navbar-item" href="about.html" target="_self"> About </a>
+              <a class="navbar-item" href="index.html#testimonials" target="_self"> Testimonials </a>
+              <a class="navbar-item is-active" href="contact.html" target="_self"> Contact </a>
             </div>
           </div>
         </div>
@@ -62,61 +66,65 @@
     </header>
 
     <!--hero-->
-    <div class="section is-hidden-mobile is-max-fullhd pb-0">
+    <section class="section is-hidden-mobile is-max-fullhd pb-0">
       <div class="container">
         <h1 class="title xl-heading">Get in touch.</h1>
       </div>
-    </div>
-    <div class="section is-hidden-tablet is-max-fullhd pb-0">
+    </section>
+    <section class="section is-hidden-tablet is-max-fullhd pb-0">
       <div class="container">
         <h1 class="title is-1">Get in touch.</h1>
       </div>
-    </div>
+    </section>
 
     <!--main content-->
-    <section class="section mb-6 mt-4">
+    <section class="section">
       <div class="container">
-        <div class="columns">
-          <div class="column is-5">
-            <p class="block mt-4 pr-6">Let's work together - I'm available to collaborate remotely on freelance projects or part-time contracts worldwide.</p>
-          </div>
-          <div class="column">
-            <!-- NETFLIFY FORM -->
-            <form id="Contact" class="is-flex is-flex-direction-column" name="contact" action="/success.html" netlify-honeypot="bot-field" data-netlify="true">
-              <p class="is-hidden">
-                <label> Don't fill this out if you're human: <input type="hidden" name="bot-field" /> </label>
-              </p>
-              <div class="field">
-                <label for="name" class="label">Name</label>
-                <p class="control is-expanded has-icons-left">
-                  <input type="text" class="input is-dark is-shadowless" id="name" placeholder="Your full name" name="name" required />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
+        <div class="block">
+          <p class="">
+            I work remotely with teams around the world — available for freelance or part-time roles. Fill out the form below with a few details about your project — I'll respond shortly.
+          </p>
+        </div>
+        <div class="block pt-6 pb-6 pr-5 pl-5">
+          <div class="columns is-centered">
+            <div class="column is-one-half-tablet is-two-thirds-desktop">
+              <!-- NETFLIFY FORM -->
+              <form id="Contact" class="is-flex is-flex-direction-column" name="contact" action="/success.html" netlify-honeypot="bot-field" data-netlify="true">
+                <p class="is-hidden">
+                  <label> Don't fill this out if you're human: <input type="hidden" name="bot-field" /> </label>
                 </p>
-              </div>
-              <div class="field">
-                <label for="email" class="label">Email</label>
-                <p class="control is-expanded has-icons-left has-icons-right">
-                  <input type="email" id="email" class="input is-dark is-shadowless" placeholder="Your email" name="email" required />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <label for="message" class="label">Message</label>
-                <div class="control">
-                  <textarea id="message" class="textarea is-dark is-shadowless" placeholder="Your message" name="message" required></textarea>
+                <div class="field">
+                  <label for="name" class="label">Your Name</label>
+                  <p class="control is-expanded has-icons-left">
+                    <input type="text" class="input is-dark is-shadowless" id="name" placeholder="Your full name" name="name" required />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </p>
                 </div>
-              </div>
-              <div class="field mt-4">
-                <div class="control">
-                  <button class="button is-black is-hidden-mobile" type="submit">Send message</button>
-                  <button class="button is-black is-fullwidth is-hidden-tablet" value="Submit input" type="submit">Send message</button>
+                <div class="field">
+                  <label for="email" class="label">Your Email</label>
+                  <p class="control is-expanded has-icons-left has-icons-right">
+                    <input type="email" id="email" class="input is-dark is-shadowless" placeholder="Your email" name="email" required />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </p>
                 </div>
-              </div>
-            </form>
+                <div class="field">
+                  <label for="message" class="label">Write Message</label>
+                  <div class="control">
+                    <textarea id="message" class="textarea is-dark is-shadowless" placeholder="*Required" name="message" required></textarea>
+                  </div>
+                </div>
+                <div class="field mt-4">
+                  <div class="control">
+                    <button class="button is-black is-hidden-mobile" type="submit">Send your message</button>
+                    <button class="button is-black is-fullwidth is-hidden-tablet" value="Submit input" type="submit">Send your message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

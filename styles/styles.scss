@@ -5,6 +5,7 @@ $purple: #233cf8;
 $pink: #fe5084;
 $white: #ffffff;
 $black: #212121;
+$green: #2dd07a;
 
 // Update Bulma's global variables
 $family-sans-serif: 'Nunito', sans-serif;
@@ -64,7 +65,7 @@ ul.my-list {
   padding-left: 0;
 }
 
-ul.my-list > li:before {
+ul.my-list > li.subs:before {
   content: '';
   display: inline-block;
   width: 3.12rem;
@@ -73,6 +74,17 @@ ul.my-list > li:before {
   vertical-align: top;
   margin-top: 0.625rem;
   margin-right: 1rem;
+}
+
+ul.my-list > li.subs2:before {
+  content: '•';
+  display: inline-block;
+  width: 1rem;
+  height: 0.05rem;
+  // background: $black;
+  vertical-align: top;
+  // margin-top: 0.625rem;
+  margin-right: 0.5rem;
 }
 
 .navbar-item img {
@@ -103,7 +115,7 @@ html {
 }
 
 footer p {
-  color: $grey-light;
+  color: $grey;
 }
 
 footer .back-top {
@@ -113,6 +125,12 @@ footer .back-top {
 .xl-heading {
   font-size: 5rem;
   line-height: 5rem;
+}
+
+.profile-pic-hp {
+  max-width: 14rem;
+  // padding: 1rem;
+  margin: auto;
 }
 
 @media (max-width: 1216px) {
@@ -140,8 +158,15 @@ footer .back-top {
 }
 
 .profile-pic {
-  max-width: 18.75rem;
-  padding: 1rem;
+  // max-width: 18.75rem;
+  // padding: 1rem;
+  margin: auto;
+}
+
+.profile-pic-hp {
+  // max-width: 18.75rem;
+  max-width: 12rem;
+  // padding: 1rem;
   margin: auto;
 }
 
