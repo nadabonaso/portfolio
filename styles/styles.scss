@@ -77,14 +77,12 @@ ul.my-list > li.subs:before {
 }
 
 ul.my-list > li.subs2:before {
-  content: '•';
+  content: '-';
   display: inline-block;
   width: 1rem;
   height: 0.05rem;
-  // background: $black;
   vertical-align: top;
-  // margin-top: 0.625rem;
-  margin-right: 0.5rem;
+  // margin-right: 0.5rem;
 }
 
 .navbar-item img {
@@ -126,11 +124,16 @@ footer .back-top {
   font-size: 5rem;
   line-height: 4.8rem;
 }
+.lg-heading {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
 
-.profile-pic-hp {
-  max-width: 14rem;
+.profile-hp {
+  max-width: 11rem;
   // padding: 1rem;
   margin: auto;
+  filter: grayscale(100%);
 }
 
 @media (max-width: 1216px) {
@@ -155,19 +158,6 @@ footer .back-top {
 .tag {
   background-color: $primary-light;
   color: $primary;
-}
-
-.profile-pic {
-  // max-width: 18.75rem;
-  // padding: 1rem;
-  margin: auto;
-}
-
-.profile-pic-hp {
-  // max-width: 18.75rem;
-  max-width: 12rem;
-  // padding: 1rem;
-  margin: auto;
 }
 
 .testimonial {
